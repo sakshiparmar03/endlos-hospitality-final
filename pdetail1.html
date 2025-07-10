@@ -32,139 +32,142 @@
 </head>
 
 <body>
-    
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919999999999" class="whatsapp-button" target="_blank" title="Chat on WhatsApp" style="margin: 13px;">
-  <div class="whatsapp-icon-container">
-    <div class="pulse-ring"></div>
-    <div class="whatsapp-icon">
-      <i class="fa-brands fa-whatsapp"></i>
-    </div>
-  </div>
-  <span class="tooltip">Chat with us</span>
-</a>
 
-<!-- Font Awesome Icon -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-button" target="_blank" title="Chat on WhatsApp"
+        style="margin: 13px;">
+        <div class="whatsapp-icon-container">
+            <div class="pulse-ring"></div>
+            <div class="whatsapp-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <span class="tooltip">Chat with us</span>
+    </a>
 
-<style>
-/* WhatsApp Button Container */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-/* Wrapper to center pulse ring and icon */
-.whatsapp-icon-container {
-  position: relative;
-  width: 60px;
-  height: 60px;
-}
+    <style>
+        /* WhatsApp Button Container */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-/* Pulse Ring */
-.pulse-ring {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #25D366;
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: pulseRing 1.5s infinite;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
+        /* Wrapper to center pulse ring and icon */
+        .whatsapp-icon-container {
+            position: relative;
+            width: 60px;
+            height: 60px;
+        }
 
-@keyframes pulseRing {
-  0% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
-  70% {
-    transform: scale(1.8);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+        /* Pulse Ring */
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #25D366;
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: pulseRing 1.5s infinite;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
 
-/* WhatsApp Icon */
-.whatsapp-icon {
-  background-color: #25D366;
-  color: white;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  font-size: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow:
-    0px 4px 10px rgba(0, 0, 0, 0.3),
-    0px -4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  position: relative;
-  transition: transform 0.3s ease;
-}
+        @keyframes pulseRing {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
 
-.whatsapp-icon:hover {
-  background-color: #1ebe5d;
-  transform: scale(1.1) rotate(5deg);
-}
+            70% {
+                transform: scale(1.8);
+                opacity: 0;
+            }
 
-/* Tooltip */
-.tooltip {
-  position: absolute;
-  right: 70px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #25D366;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 14px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  z-index: 1;
-}
+            100% {
+                opacity: 0;
+            }
+        }
 
-.whatsapp-button:hover .tooltip {
-  opacity: 1;
-  right: 80px;
-}
+        /* WhatsApp Icon */
+        .whatsapp-icon {
+            background-color: #25D366;
+            color: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow:
+                0px 4px 10px rgba(0, 0, 0, 0.3),
+                0px -4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
 
-/* Responsive: adjust for smaller screens */
-@media (max-width: 480px) {
-  .whatsapp-icon-container {
-    width: 50px;
-    height: 50px;
-  }
+        .whatsapp-icon:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.1) rotate(5deg);
+        }
 
-  .whatsapp-icon {
-    font-size: 22px;
-  }
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #25D366;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            z-index: 1;
+        }
 
-  .tooltip {
-    font-size: 12px;
-    padding: 5px 10px;
-    right: 60px;
-  }
+        .whatsapp-button:hover .tooltip {
+            opacity: 1;
+            right: 80px;
+        }
 
-  .whatsapp-button:hover .tooltip {
-    right: 70px;
-  }
-}
-</style>
+        /* Responsive: adjust for smaller screens */
+        @media (max-width: 480px) {
+            .whatsapp-icon-container {
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-icon {
+                font-size: 22px;
+            }
+
+            .tooltip {
+                font-size: 12px;
+                padding: 5px 10px;
+                right: 60px;
+            }
+
+            .whatsapp-button:hover .tooltip {
+                right: 70px;
+            }
+        }
+    </style>
     <div id="wrapper">
         <!-- <div class="float-text show-on-scroll">
             <span><a href="#">Scroll to top</a></span>
@@ -183,9 +186,9 @@
                         <div class="col-lg-12">
                             <div class="d-flex justify-content-between xs-hide">
                                 <div class="header-widget d-flex">
-                                    <div class="topbar-widget"><a href="https://wa.me/19452677548"><i
+                                    <div class="topbar-widget"><a href="https://wa.me/19452677548"  target="_blank"><i
                                                 class="icofont-phone"></i>+1(945)267-7548</a></div>
-                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087"><i
+                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087"  target="_blank"><i
                                                 class="icofont-phone"></i>+919727792087</a></div>
                                     <div class="topbar-widget">
                                         <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture"
@@ -198,7 +201,7 @@
                                 </div>
 
 
-                             <div class="social-icons" style="margin-top: -9px;">
+                                <div class="social-icons" style="margin-top: -9px;">
                                     <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank">
                                         <i class="fa-brands fa-facebook fa-lg"></i>
                                     </a>
@@ -349,7 +352,7 @@
                     <div class="row g-4 gx-5 align-items-center">
                         <div class="col-lg-6 offset-lg-3 text-center">
 
-                            <h1>Metal Bed</h1>
+                            <h1>Metal Bed for Hotels</h1>
                         </div>
 
                         <div class="spacer-double"></div>
@@ -464,10 +467,14 @@
                         </div>
 
                         <div class="col-lg-6" style="margin-top: -250px; font-family: sans-serif;">
-                            <h2>Built to Last Styled for Hospitality</h2>
-                            <p> This metal bed offers a perfect balance
-                                of strength and simplicity. Its clean, modern design fits seamlessly
-                                into any hotel room while ensuring long-term reliability and guest comfort.</p>
+                            <h2>Durable. Functional. Built for Hospitality.</h2>
+                            <p>Designed for long-term durability, easy maintenance, and guest comfort, this metal bed
+                                frame for hotels has a clean and modern design that fits a variety of guest room styles,
+                                making it ideal for both economy and branded hotel chains.
+                                This hospitality-grade metal bed base is crafted with a strong steel structure and
+                                powder-coated finish, ensuring lasting performance with ample underbed clearance and
+                                quick assembly, making it a smart and space-efficient solution for today's hospitality
+                                needs.</p>
 
                             <!-- <div class="spacer-half"></div>
 
@@ -972,7 +979,7 @@
         </div>
         <!-- content close -->
         <!-- footer begin -->
-         
+
         <footer style="background-color: #000; color: #fff; padding: 40px 0; font-family: sans-serif;">
             <div style="width: 100%; padding-inline: 20px;">
                 <div class="footer-container"
@@ -1035,23 +1042,24 @@
 
                 <!-- Bottom Section -->
                 <div class="bottom-section"
-                    style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
-                    <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
-                    <div style="margin-top: 10px;">
-                        <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
-                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
-                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="https://wa.me/19452677548" target="_blank"
-                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
-                                class="fab fa-whatsapp"></i></a>
-                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
-                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
-                                class="icofont-envelope"></i></a>
-                    </div>
+                style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
+                <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
+                <div><a href="policy.html" target="_blank">Privacy Policy</a></div>
+                <div style="margin-top: 10px;">
+                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/19452677548" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="icofont-envelope"></i></a>
                 </div>
+            </div>
             </div>
             <style>
                 @media (max-width: 768px) {
