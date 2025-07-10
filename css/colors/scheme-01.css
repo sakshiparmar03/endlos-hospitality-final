@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #234982;
+  --primary-color-rgb: 35, 73, 130;
+  --secondary-color: #678fd5;
+  --secondary-color-rgb: 103, 143, 213;
+  --tertiary-color: #F4F7FB;
+  --tertiary-color-rgb: 244, 247, 251;
+}
+    .slider-container {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    .slider-track {
+      display: flex;
+      width: max-content;
+      will-change: transform;
+    }
+
+    .slider-track img {
+      width: 150px;
+      padding: 10px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+      .slider-track img {
+        width: 100px;
+      }
+    }
+        .slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      will-change: transform;
+    }
+
+    .slider-track .col-lg-2 {
+      flex: 0 0 auto; /* prevent shrinking */
+    }

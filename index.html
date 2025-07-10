@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Endlos-Hospitality</title>
+    <link rel="icon" href="images/hospitalityfavicon.ico" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="CoolAir — Air Conditioner & HVAC Repair Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div> -->
+        <!-- <div class="scrollbar-v show-on-scroll"></div> -->
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+        <style>
+            .image-overlay-container {
+                position: relative;
+                display: inline-block;
+            }
+
+            .image-overlay-container img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .image-overlay-container .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(124, 115, 70, 0.445);
+                opacity: 0.5;
+                /* Adjust for more or less transparency */
+                pointer-events: none;
+                /* Allows clicks to pass through */
+            }
+
+            .bg-white {
+                background-color: white;
+            }
+
+            @media (max-width: 768px) {
+                footer .footer-container {
+                    flex-direction: column !important;
+                    gap: 30px !important;
+                }
+
+                footer .company-links {
+                    margin-left: 0 !important;
+                }
+
+                footer .bottom-section {
+                    flex-direction: column !important;
+                    text-align: center;
+                    gap: 15px;
+                }
+
+                footer .bottom-section div {
+                    margin-top: 10px !important;
+                }
+            }
+
+            #schedule-btn {
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            #schedule-btn:hover {
+                background-color: #fdcf21 !important;
+                color: black !important;
+                /* Optional: to ensure text is readable */
+            }
+
+            #schedule-btn {
+                transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                BACKGROUND: WHITE;
+                /* Normal shadow */
+            }
+
+            #schedule-btn:hover {
+                background-color: #fdcf21 !important;
+                color: black !important;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                /* Deeper shadow on hover */
+            }
+
+            /* WhatsApp Button Container */
+            .whatsapp-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 9999;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            /* Wrapper to center pulse ring and icon */
+            .whatsapp-icon-container {
+                position: relative;
+                width: 60px;
+                height: 60px;
+            }
+
+            /* Pulse Ring */
+            .pulse-ring {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #25D366;
+                border-radius: 50%;
+                opacity: 0.5;
+                animation: pulseRing 1.5s infinite;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+
+            @keyframes pulseRing {
+                0% {
+                    transform: scale(1);
+                    opacity: 0.6;
+                }
+
+                70% {
+                    transform: scale(1.8);
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            /* WhatsApp Icon */
+            .whatsapp-icon {
+                background-color: #25D366;
+                color: white;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                font-size: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow:
+                    0px 4px 10px rgba(0, 0, 0, 0.3),
+                    0px -4px 8px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                position: relative;
+                transition: transform 0.3s ease;
+            }
+
+            .whatsapp-icon:hover {
+                background-color: #1ebe5d;
+                transform: scale(1.1) rotate(5deg);
+            }
+
+            /* Tooltip */
+            .tooltip {
+                position: absolute;
+                right: 70px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #25D366;
+                color: white;
+                padding: 6px 12px;
+                border-radius: 8px;
+                font-size: 14px;
+                white-space: nowrap;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                z-index: 1;
+            }
+
+            .whatsapp-button:hover .tooltip {
+                opacity: 1;
+                right: 80px;
+            }
+
+            /* Responsive: adjust for smaller screens */
+            @media (max-width: 480px) {
+                .whatsapp-icon-container {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .whatsapp-icon {
+                    font-size: 22px;
+                }
+
+                .tooltip {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                    right: 60px;
+                }
+
+                .whatsapp-button:hover .tooltip {
+                    right: 70px;
+                }
+            }
+
+            .logo-track {
+                display: flex;
+                animation: scroll 40s linear infinite;
+                /* or however you're animating */
+                align-items: center;
+            }
+
+            .logo-slide {
+                flex: 0 0 auto;
+                margin-right: 20px;
+                /* Adjust spacing as needed */
+            }
+
+            .logo-track {
+                display: flex;
+                gap: 20px;
+                /* Adjust gap as needed */
+                animation: scroll 40s linear infinite;
+                align-items: center;
+            }
+
+            .logo-carousel {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                background: #ffffff;
+                padding: 20px 0;
+            }
+
+            .logo-track {
+                display: flex;
+                width: calc(12 * 160px);
+                /* 12 logos * width */
+                animation: scroll 30s linear infinite;
+            }
+
+            .logo-slide {
+                width: 160px;
+                flex-shrink: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo-slide img {
+                max-width: 100%;
+                height: auto;
+                padding: 10px;
+                object-fit: contain;
+            }
+
+            /* Infinite scroll animation */
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            .card-wrapper {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                background-color: white;
+            }
+
+            .card-wrapper:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            }
+
+            .card-img-top {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .padding40 {
+                padding: 40px;
+            }
+
+            /* Responsive tweaks */
+            @media (max-width: 768px) {
+                .padding40 {
+                    padding: 20px;
+                }
+            }
+        </style>
+        <!-- header begin -->
+        <header class="transparent scroll-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="https://wa.me/19452677548"><i
+                                                class="icofont-phone"></i>+1(945)267-7548</a></div>
+                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087"><i
+                                                class="icofont-phone"></i>+919727792087</a></div>
+                                    <div class="topbar-widget">
+                                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture"
+                                            target="_blank">
+                                            <i class="icofont-envelope"></i>info@endlos.furniture
+                                        </a>
+                                    </div>
+                                    <!-- <div class="topbar-widget"><a href="#"><i class="icofont-wall-clock"></i>Mon - Fri
+                                            08.00 - 18.00</a></div> -->
+                                </div>
+
+
+                                <div class="social-icons" style="margin-top: -9px;">
+                                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank">
+                                        <i class="fa-brands fa-facebook fa-lg"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                                        style="margin-top: -9px;"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                                    <a href="https://www.instagram.com/endlos.furniture?igsh=MXR2Z3FyOHNydHhoOA=="
+                                        target="_blank">
+                                        <i class="fa-brands fa-instagram fa-lg"></i>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <!-- <li><a class="menu-item" href="#">Home</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="index.html">Homepage One</a></li>
+                                            <li><a class="menu-item" href="homepage-2.html">Homepage Two</a></li>
+                                            <li><a class="menu-item" href="homepage-3.html">Homepage Three</a></li>
+                                            <li><a class="menu-item" href="homepage-4.html">Homepage Four</a></li>
+                                            <li><a class="menu-item" href="homepage-5.html">Homepage Five</a></li>
+                                            <li><a class="menu-item" href="homepage-6.html">Homepage Six</a></li>
+                                            <li><a class="menu-item" href="homepage-7.html">Homepage Seven</a></li>
+                                            <li><a class="menu-item" href="homepage-8.html">Homepage Eight</a></li>
+                                            <li><a class="menu-item" href="homepage-9.html">Homepage Nine</a></li>
+                                            <li><a class="menu-item new" href="homepage-10.html">Homepage Ten</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="#">Collections</a>
+                                        <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+                                    </li>
+
+                                    <!-- <li><a class="menu-item" href="collections.html">Collections</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+
+
+                                    <li><a class="menu-item" href="products.html">Products</a>
+                                    <li><a class="menu-item" href="projects.html">Projects</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="products.html">All Products</a></li>
+                                            <li><a class="menu-item" href="product-details-new.html">Product Details
+                                                    New</a></li>
+                                            <li><a class="menu-item" href="product-details.html">Product Details
+                                                    Simple</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
+                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+                            <style>
+                            </style>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/919999999999" class="whatsapp-button" target="_blank" title="Chat on WhatsApp"
+            style="margin: 13px;">
+            <div class="whatsapp-icon-container">
+                <div class="pulse-ring"></div>
+                <div class="whatsapp-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <span class="tooltip">Chat with us</span>
+        </a>
+
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+        <style>
+            /* WhatsApp Button Container */
+            .whatsapp-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 9999;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            /* Wrapper to center pulse ring and icon */
+            .whatsapp-icon-container {
+                position: relative;
+                width: 60px;
+                height: 60px;
+            }
+
+            /* Pulse Ring */
+            .pulse-ring {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #25D366;
+                border-radius: 50%;
+                opacity: 0.5;
+                animation: pulseRing 1.5s infinite;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+
+            @keyframes pulseRing {
+                0% {
+                    transform: scale(1);
+                    opacity: 0.6;
+                }
+
+                70% {
+                    transform: scale(1.8);
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            /* WhatsApp Icon */
+            .whatsapp-icon {
+                background-color: #25D366;
+                color: white;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                font-size: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow:
+                    0px 4px 10px rgba(0, 0, 0, 0.3),
+                    0px -4px 8px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                position: relative;
+                transition: transform 0.3s ease;
+            }
+
+            .whatsapp-icon:hover {
+                background-color: #1ebe5d;
+                transform: scale(1.1) rotate(5deg);
+            }
+
+            /* Tooltip */
+            .tooltip {
+                position: absolute;
+                right: 70px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #25D366;
+                color: white;
+                padding: 6px 12px;
+                border-radius: 8px;
+                font-size: 14px;
+                white-space: nowrap;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                z-index: 1;
+            }
+
+            .whatsapp-button:hover .tooltip {
+                opacity: 1;
+                right: 80px;
+            }
+
+            /* Responsive: adjust for smaller screens */
+            @media (max-width: 480px) {
+                .whatsapp-icon-container {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .whatsapp-icon {
+                    font-size: 22px;
+                }
+
+                .tooltip {
+                    font-size: 12px;
+                    padding: 5px 10px;
+                    right: 60px;
+                }
+
+                .whatsapp-button:hover .tooltip {
+                    right: 70px;
+                }
+            }
+        </style>
+
+
+
+
+
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+            <section class="section-dark text-light no-top no-bottom position-relative overflow-hidden z-1000">
+                <div class="v-center">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="swiper-inner" data-bgimage="url(images/slider/home1st.png)">
+                                    <div class="sw-caption">
+                                        <div class="container">
+                                            <div class="row gx-5 align-items-center">
+
+                                                <div class="spacer-double"></div>
+
+                                                <div class="col-lg-8 offset-lg-2 text-center">
+                                                    <div class="spacer-single"></div>
+                                                    <div class="sw-text-wrapper">
+                                                        <!-- <div class="subtitle s2 mb-2">Climate Care</div> -->
+                                                        <h2 class="slider-title mb-3" style="color: #f2f2f2;">D e s i g
+                                                            n e d. </h2>
+                                                        <!-- <h3 class="slider-teaser mb-3">Solution for Comfort and Reliability</h3> -->
+                                                        <div class="spacer-10"></div>
+                                                        <!-- <a class="btn-main mb10 mb-3" href="contact.html">Book a
+                                                            Repair</a> -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="spacer-single"></div>
+                                            </div>
+
+                                            <div class="row g-4 slider-extra sm-hide">
+                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/labor.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Expert Technicians</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/calendar.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Flexible Scheduling</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/best-price.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Transparent Pricing</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sw-overlay"></div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="swiper-inner" data-bgimage="url(images/slider/home2nd.png)">
+                                    <div class="sw-caption">
+                                        <div class="container">
+                                            <div class="row gx-5 align-items-center">
+
+                                                <div class="spacer-double"></div>
+
+                                                <div class="col-lg-8 offset-lg-2 text-center">
+                                                    <div class="spacer-single"></div>
+                                                    <div class="sw-text-wrapper">
+                                                        <!-- <div class="subtitle s2 mb-2">Pure Comfort</div> -->
+                                                        <h2 class="slider-title mb-3" style="color: #f2f2f2;">M a n u f
+                                                            a c t u r e d.</h2>
+                                                        <!-- <h3 class="slider-teaser mb-3">Solution for Comfort and Reliability</h3> -->
+                                                        <div class="spacer-10"></div>
+                                                        <!-- <a class="btn-main mb10 mb-3" href="contact.html">Book a
+                                                            Repair</a> -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="spacer-single"></div>
+                                            </div>
+
+                                            <div class="row g-4 slider-extra sm-hide">
+                                                <!-- <div class="col-lg-4 col-md-6 -sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/labor.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Expert Technicians</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/calendar.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Flexible Scheduling</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/best-price.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Transparent Pricing</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="sw-overlay s2"></div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="swiper-inner" data-bgimage="url(images/slider/home3rd.png)">
+                                    <div class="sw-caption">
+                                        <div class="container">
+                                            <div class="row gx-5 align-items-center">
+
+                                                <div class="spacer-double"></div>
+
+                                                <div class="col-lg-8 offset-lg-2 text-center">
+                                                    <div class="spacer-single"></div>
+                                                    <div class="sw-text-wrapper">
+                                                        <!-- <div class="subtitle s2 mb-2">Pure Comfort</div> -->
+                                                        <h2 class="slider-title mb-3" style="color: #f2f2f2;">D e l i v
+                                                            e r e d.
+                                                        </h2>
+                                                        <!-- <h3 class="slider-teaser mb-3">Solution for Comfort and Reliability</h3> -->
+                                                        <div class="spacer-10"></div>
+                                                        <!-- <a class="btn-main mb10 mb-3" href="contact.html">Book a
+                                                            Repair</a> -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="spacer-single"></div>
+                                            </div>
+
+                                            <div class="row g-4 slider-extra sm-hide">
+                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/labor.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Expert Technicians</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/calendar.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Flexible Scheduling</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                                <!-- <div class="col-lg-4 col-md-6 mb-sm-30">
+                                                <div class="relative">
+                                                    <img src="images/icons/white/best-price.webp" class="absolute w-80px p-3 mb-3 z-2" alt="">
+                                                    <div class="absolute bg-color-2 w-80px circle h-80px p-3"></div>
+                                                    <div class="pl-100">
+                                                        <h4>Transparent Pricing</h4>
+                                                        <p>Trust us to deliver reliable solutions, exceptional service.</p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="sw-overlay s2"></div>
+                                </div>
+                            </div>
+                            <!-- Slides -->
+
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>src="images/hospitalitylogo.webp"
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt50 bg-white">
+                <div class="container">
+                    <div class="row align-items-center" style="margin-top: 90px;">
+                        <div class="col-lg-6">
+                            <img style="border-radius:4%;" src="images/misc/worker1.webp" class="img-fluid wow scaleIn"
+                                alt="">
+                        </div>
+                        <div class="col-lg-5 offset-lg-1">
+                            <!-- <div class="subtitle wow fadeInUp mb-3">Welcome</div> -->
+                            <h2 class="wow fadeInUp">Crafted in India, Trusted Across the USA</h2>
+                            <p class="wow fadeInUp">With our own hospitality furniture manufacturing facility in India,
+                                we've been delivering custom hotel furniture and brand approved casegoods to hotel
+                                owners across the USA. Thus, ENDLOS has established itself as a trusted hotel furniture
+                                supplier, manufacturing furniture pieces known for their precision, durability and
+                                timeless design.
+                            </p>
+                            <div class="spacer-10"></div>
+                            <!-- <a class="btn-main wow fadeInUp" href="about.html">About Company</a> -->
+                        </div>
+                    </div>
+                    <div class="spacer-double"></div>
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Material We Used</div> -->
+                    </div>
+
+                    <!-- <div class="row gx-5" style="justify-content: center;">
+                        <div class="col-lg-2 col-6 d-flex justify-content-center align-items-center"
+                            style="height: 150px; width: 306px;">
+                            <img src="images/rawmaterailbrand/MakeInIndia2.png" class="p-2 img-fluid wow scaleIn"
+                                data-wow-delay=".0s" alt="">
+                        </div>
+                    </div> -->
+
+                    <!-- Partition Line -->
+                    <!-- <hr style="border: 1px solid #727272; margin: 20px 0; width: 100%; "> -->
+
+
+
+                </div>
+            </section>
+            <style>
+            </style>
+
+            <section class="no-top" style="background-color: #fff;">
+                <div class="pt50 bg-white" style="margin-top: -27px;">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-3 text-center">
+                                    <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Complete Solutions</div> -->
+                                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Project Management Overview</h2>
+                                    <p
+                                        class="text-base md:text-lg leading-snug md:leading-normal text-gray-700 wow fadeInUp max-w-3xl mx-auto text-center">
+                                        Our project management process covers everything from initial planning to final
+                                        installation, including space planning, brand approvals, FF&E manufacturing, and
+                                        on-time delivery, thus providing end-to-end project execution for custom hotel
+                                        furniture.
+
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="row g-4 align-items-stretch">
+                                <!-- Your 6 cards here -->
+                            </div>
+                            <style>
+                                .card-wrapper {
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    background: #fff;
+                                    border-radius: 20px;
+                                    overflow: hidden;
+                                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                                    transition: all 0.3s ease;
+                                }
+
+                                .image-overlay-container {
+                                    position: relative;
+                                    overflow: hidden;
+                                    width: 100%;
+                                    height: 250px;
+                                    /* Fixed image height for consistency */
+                                }
+
+                                .image-overlay-container img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+
+                                .overlay {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    background: rgba(0, 0, 0, 0.3);
+                                    opacity: 0;
+                                    transition: 0.3s;
+                                }
+
+                                .image-overlay-container:hover .overlay {
+                                    opacity: 1;
+                                }
+
+                                .padding40 {
+                                    padding: 30px 20px;
+                                    flex-grow: 1;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                }
+
+                                .padding40 h4 {
+                                    margin-bottom: 15px;
+                                    font-size: 1.2rem;
+                                }
+
+                                .spacer-20 {
+                                    height: 20px;
+                                }
+
+                                @media (max-width: 768px) {
+                                    .image-overlay-container {
+                                        height: 200px;
+                                    }
+
+                                    .padding40 {
+                                        padding: 20px 15px;
+                                    }
+                                }
+                            </style>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="0s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/service11.png" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>1. Layout & Measurements</h4>
+                                        <p class="no-bottom">We collect accurate site measurements from the client,
+                                            which we use to design smart, space-efficient furniture layouts, tailored to
+                                            hotel room requirements, enhancing guest comfort.</p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".2s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-2.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>2. 3D Visualization and Renders</h4>
+                                        <p class="no-bottom"> To help clients visualize their finished hotel rooms
+                                            before production, we develop realistic 3D visualizations and interior
+                                            renders for them.
+                                        </p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".4s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/service22.png" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>3. Keyline Drawing</h4>
+                                        <p class="no-bottom">We prepare detailed keyline drawings with exact dimensions
+                                            and specifications to serve as a blueprint for precise furniture
+                                            manufacturing.
+                                        </p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".6s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-4.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>4. Brand Approval and Agreement Signing</h4>
+                                        <p class="no-bottom">Final designs made according to hotel brand standards are
+                                            submitted for approval to ensure satisfaction. Once approved, agreements are
+                                            signed to officially begin production.
+                                        </p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay=".8s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-5.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>5. Production</h4>
+                                        <p class="no-bottom"> Manufacturing begins under strict quality control systems,
+                                            following approved design specifications for each item so that the final
+                                            product meets hospitality grade durability.</p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="1s">
+                                <div class="card-wrapper">
+                                    <div class="relative">
+                                        <div class="image-overlay-container">
+                                            <img src="images/misc/services-6.webp" class="card-img-top" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="padding40">
+                                        <h4>6. Dispatch, Delivery and Installation</h4>
+                                        <p class="no-bottom">Each item is securely packaged and dispatched to the
+                                            project location in the USA followed by on-site installation to ensure
+                                            seamless and timely handover.
+                                        </p>
+                                        <div class="spacer-20"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-color-3">
+                <div class="pt50 bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3 text-center">
+                                <!-- <div class="subtitle bg-color-2 text-white wow fadeInUp mb-3">Top 6 Reasons</div> -->
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s" style="margin-top: -102px;">Why Choose Us
+                                </h2>
+                                <p class="text-base md:text-lg leading-snug text-gray-700 text-center mx-auto wow fadeInUp px-8"
+                                    style="max-width: 660px;">
+                                    We deliver expert design, local service, and in-house manufacturing to ensure smooth
+                                    execution and a tailored client experience.
+                                </p>
+
+
+
+
+                                <div class="spacer-single"></div>
+                            </div>
+                        </div>
+                        <style>
+                            .icon_check {
+                                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                                /* Adds a subtle shadow */
+                            }
+
+                            /* box-shadow: offset-x offset-y blur-radius color */
+
+                            /* A bit more pronounced */
+                        </style>
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".0s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80" style="background-color: white;">
+                                        <h4>Local Presence In USA</h4>
+                                        <p class="mb-0"> With our presence in the USA, we offer faster communication,
+                                            quicker support, and better project coordination.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4>Working Directly for You</h4>
+                                        <p class="mb-0">We ensure clear communication, tailored service, and full
+                                            control over your hospitality furniture project from design to delivery.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4> Free design services</h4>
+                                        <p class="mb-0">Our expert hotel furniture design team offers complimentary
+                                            assistance with space planning, 3D renderings, and brand compliant layouts.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color-2 text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4>End-to-End Project Management</h4>
+                                        <p class="mb-0">Our end-to-end FF&E process manages every stage of your
+                                            hospitality furniture project.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color-2 text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4>In-house manufacturing</h4>
+                                        <p class="mb-0">We have complete control over quality, lead times, and
+                                            customization as all of our hotel furniture is manufactured in India at our
+                                            own facility for hotels in the USA.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                                <div>
+                                    <i style="color: rgb(255 214 2);background-color: white;"
+                                        class="bg-color-2 text fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                    <div class="pl-80">
+                                        <h4> Personalized client support</h4>
+                                        <p class="mb-0"> We offer dedicated, one-on-one support to ensure your unique
+                                            needs are understood and delivered with care.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spacer-double"></div>
+                            <div class="col-lg-6 offset-lg-3 text-center">
+                                <!-- <div class="subtitle bg-color-3 wow fadeInUp mb-3">Material We Used</div> -->
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Materials We Use </h2>
+                            </div>
+
+                            <!-- Partition Line -->
+                            <!-- <hr style="border: 1px solid #727272; margin: 20px 0; width: 100%;"> -->
+
+                            <!-- Carousel Wrapper -->
+                            <div class="logo-carousel" style="background: 0% 0% / cover no-repeat #ffffff;">
+                                <div class="logo-track">
+                                    <!-- Repeat the logos twice for seamless infinite effect -->
+
+                                    <div class="logo-slide"><a href="#"><img
+                                                src="images/rawmaterailbrand/carbphase2.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/centurylogo.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/hettich.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/logo2.webp" alt=""></a></div>
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/merino2.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="https://www.rehau.com/in-en"></a><img
+                                            src="images/rawmaterailbrand/rehanu2.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img src="images/rawmaterailbrand/ss1.png"
+                                            alt=""></a></div>
+                                    <div class="logo-slide"><a href="#"></a><img src="images/rawmaterailbrand/ss2.png"
+                                            alt=""></a></div>
+                                    <div class="logo-slide"><a href="#"></a><img src="images/rawmaterailbrand/ss3.png"
+                                            alt=""></a></div>
+
+                                    <!-- Duplicate for infinite loop effect -->
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/carbphase2.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/centurylogo.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/hettich.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/logo2.webp" alt=""></a></div>
+                                    <div class="logo-slide"><img src="images/rawmaterailbrand/merino2.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img
+                                            src="images/rawmaterailbrand/rehanu2.webp" alt=""></a>
+                                    </div>
+                                    <div class="logo-slide"><a href="#"></a><img src="images/rawmaterailbrand/ss1.png"
+                                            alt=""></a></div>
+                                    <div class="logo-slide"><a href="#"></a><img src="images/rawmaterailbrand/ss2.png"
+                                            alt=""></a></div>
+                                    <div class="logo-slide"><a href="#"></a><img src="images/rawmaterailbrand/ss3.png"
+                                            alt=""></a></div>
+                                </div>
+                            </div>
+
+                            <!-- CSS -->
+                            <style>
+                            </style>
+
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="no-top mt-100">
+        <div class="pt50 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div
+                            class="padding60 rounded-1 sm-padding40 overflow-hidden position-relative jarallax text-light">
+                            <img src="images/background/9.png" class="jarallax-img" alt="">
+                            <div class="row align-items-center g-4 gx-5 relative z-index-1000">
+                                <div class="col-lg-8">
+                                    <!-- <div class="subtitle s2 wow fadeInUp mb-3">HVAC Specialist</div> -->
+                                    <h2 class="mb20 wow fadeInUp" data-wow-delay=".2s" style="color: white;">At Endlos
+                                        Hospitality,
+                                        we craft durable, stylish furniture with a focus on quality, innovation,
+                                        and sustainability, helping hotels create memorable, comfortable spaces for
+                                        their guests.</h2>
+                                    <!-- <a class="btn-main" href="contact.html">Schedule Now</a> -->
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <img src="images/team/khilanpatel2.png" class="img-fluid rounded-10px wow scaleIn"
+                                        alt="">
+                                    <h5 class="mt-3 mb-0"
+                                        style="color: white; font-weight: bolder; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+                                        Khilan Patel
+                                    </h5>
+                                    <p class="small mb-2"
+                                        style="color: rgb(255, 255, 255); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">
+                                        Founder &amp; CEO
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="pt-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image column -->
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center justify-content-lg-start">
+                    <img src="images/logo/AAHOA Logo.png" class="img-fluid wow scaleIn" style="margin-left: 6px;"
+                        alt="AAHOA Logo" style="border-radius: 4%; max-width: 80%;">
+                </div>
+
+                <!-- Text content column -->
+                <div class="col-12 col-lg-6">
+                    <h2 class="wow fadeInUp text-center text-lg-start">Proud AAHOA Allied Vendor</h2>
+                    <p class="wow fadeInUp text-center text-lg-start">
+                        As an AAHOA Allied Vendor Member, we support hospitality businesses and hotels across the USA by
+                        bringing their vision to life. Our focus on reliability, value and personalized service ensures
+                        that our clients get high quality FF&E solutions with precision and care.
+                    </p>
+                    <div class="spacer-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Services Process below -->
+    <!-- <section class="no-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle wow fadeInUp mb-3">Services Process</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">How It Works</h2>
+                            <p class="lead wow fadeInUp">Qui culpa qui consequat officia cillum quis irure aliquip ut dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.</p>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row g-4 arrow-divider">
+                            <div class="col-lg-3 col-6 wow fadeInRight" data-wow-delay=".2s">
+                                <div class="de-step-s1 text-light">
+                                    <div class="d-number wow fadeInRight" data-wow-delay=".2s">Step 1</div>
+                                    <h4>Consultation</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 wow fadeInRight" data-wow-delay=".6s">
+                                <div class="de-step-s1 text-light">
+                                    <div class="d-number wow fadeInRight" data-wow-delay=".6s">Step 3</div>
+                                    <h4>Agreement</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 wow fadeInRight" data-wow-delay=".8s">
+                                <div class="de-step-s1 text-light">
+                                    <div class="d-number wow fadeInRight" data-wow-delay=".8s">Step 3</div>
+                                    <h4>Execution</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6 wow fadeInRight" data-wow-delay="1s">
+                                <div class="de-step-s1 text-light">
+                                    <div class="d-number wow fadeInRight" data-wow-delay="1s">Step 4</div>
+                                    <h4>Quality Check</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+    <!-- Our Specialize section below -->
+    <!-- <section class="no-top">
+                <div class="container">
+                    <div class="row  gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="subtitle wow fadeInUp mb-3">Our Specialize</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">From Chilling Challenges to Heating Solutions</h2>
+                            <p class="wow fadeInUp">Welcome to CoolAir, your trusted partner for all your HVAC needs. With years of industry experience and a commitment to excellence, we specialize in providing top-quality heating, ventilation, and air conditioning services tailored to your unique requirements. From installation and repair to maintenance and upgrades, our skilled technicians are dedicated to delivering reliable solutions that ensure your comfort and satisfaction.</p>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="row g-4">
+                                <div class="col-6">
+                                    <img src="images/misc/9.webp" class="img-fluid rounded-10 mb-4 wow scaleIn" alt="">
+                                    <div class="col-12 text-center">
+                                        <div class="bg-color text-light px-4 pt30 pb10 rounded-10 wow fadeInLeft">
+                                            <div class="de_count">
+                                                <h3><span class="timer" data-to="850" data-speed="3000"></span>+</h3>
+                                                <h4>Projects Completed</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="spacer-double sm-hide"></div>
+                                    <div class="col-12 text-center">
+                                        <div class="bg-color-3 px-4 pt30 pb10 rounded-10 wow fadeInRight">
+                                            <div class="de_count">
+                                                <h3><span class="timer" data-to="99" data-speed="3000"></span>%</h3>
+                                                <h4>Customer Satisfication</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="images/misc/8.webp" class="img-fluid rounded-10 mt-4 wow scaleIn" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section> -->
+    <!-- 
+    <section class="no-top text-center">
+        <div class="pt50 bg-white"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 text-center"> -->
+    <!-- <div class="subtitle wow fadeInUp mb-3">Testimonials</div> -->
+    <!-- <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Happy Customers</h2>
+                    <p class="lead wow fadeInUp">Real feedback from our satisfied customers, sharing
+                        their experiences and the value they've found in our services.</p>
+                    <div class="spacer-single"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="owl-carousel owl-theme wow fadeInUp" id="testimonial-carousel">
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/1.jpg">
+                                    <div>Michael S.<span>Customer</span></div>
+                                </div>
+                                <p>"Their technicians are always prompt, professional, and knowledgeable. From
+                                    regular maintenance to emergency repairs, they've got us covered. Highly
+                                    recommend!""
+                                </p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/2.jpg">
+                                    <div>Robert L.<span>Customer</span></div>
+                                </div>
+                                <p>"They responded promptly and had a technician at my door in no time. Within a
+                                    few hours, my AC was back up and running smoothly. I'm incredibly grateful
+                                    for their quick response and expert repair work."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/3.jpg">
+                                    <div>Jake M.<span>Customer</span></div>
+                                </div>
+                                <p>"Their commitment to customer satisfaction is unmatched. Whether it's a
+                                    routine maintenance visit or a complex repair job, I know I can count on
+                                    them to deliver exceptional service every time. "</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/4.jpg">
+                                    <div>Alex P.<span>Customer</span></div>
+                                </div>
+                                <p>"From the initial consultation to the final installation, their team
+                                    demonstrated professionalism, expertise, and a commitment to excellence. Our
+                                    new HVAC system is performing flawlessly."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/5.jpg">
+                                    <div>Carlos R.<span>Customer</span></div>
+                                </div>
+                                <p>"Their technicians quickly diagnosed the problem and recommended a
+                                    cost-effective solution. Thanks to their expertise and efficient repair
+                                    work, our home is now consistently comfortable."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/6.jpg">
+                                    <div>Edward B.<span>Customer</span></div>
+                                </div>
+                                <p>"Their attention to detail, dedication to customer satisfaction, and
+                                    commitment to quality set them apart from the competition. Trust it whether
+                                    it's a routine maintenance visit or a complex repair job."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/7.jpg">
+                                    <div>Daniel H.<span>Customer</span></div>
+                                </div>
+                                <p>"From start to finish, their team provided top-notch service, guiding me
+                                    through the selection process, handling the installation with precision, and
+                                    ensuring everything was in perfect working order."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="de_testi s2">
+                            <blockquote>
+                                <i class="icofont-quote-left absolute start-30px top-30px id-color-2"></i>
+                                <div class="de_testi_by">
+                                    <img class="bg-white p-2 circle" alt="" src="images/testimonial/8.jpg">
+                                    <div>Bryan G.<span>Customer</span></div>
+                                </div>
+                                <p>"Their technicians are knowledgeable, courteous, and always go the extra mile
+                                    to ensure customer satisfaction. Whether it's a routine tune-up or a major
+                                    repair."</p>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section> -->
+
+    <section class="bg-color-3" style="margin-top: -114px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 text-center">
+                    <!-- <div class="subtitle bg-color-2 text-light wow fadeInUp mb-3">Do you have</div> -->
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Any questions?</h2>
+                </div>
+            </div>
+
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 mb-sm-20 position-relative">
+                    <div class="relative p-4">
+                        <!-- <div class="absolute start-50px top-50px">
+                                    <i
+                                        class="bg-color text-light  fs-48 p-2  id-color icofont-headphone-alt rounded-10px mb-2 wow scaleIn"></i><br>
+                                </div> -->
+                        <img src="images/misc/1.png" class="img-fluid rounded-20px wow zoomIn" data-wow-delay="0s"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="accordion s2 wow fadeInUp">
+                        <div class="accordion-section">
+                            <div class="accordion-section-title" data-tab="#accordion-a1">
+                                What types of furniture do you manufacture?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a1">
+                                <p>As a hospitality furniture manufacturer in India, we possess expertise in creating
+                                    high-quality FF&E case goods for hotels and motels across the USA. Our product range
+                                    includes
+                                    <a href="pdetail1.html" style="text-decoration: underline; font-weight: bold; color:#000">
+                                        metal bed</a>
+                                    for hotel rooms,
+                                    <a href="pdetail2.html" style="text-decoration: underline; font-weight: bold; color:#000">
+                                        headboards</a> for hotel rooms,
+                                    <a href="pdetail3.html" style="text-decoration: underline; font-weight: bold; color:#000"> wall
+                                        guards</a> for hotel rooms,
+                                    <a href="pdetail4.html" style="text-decoration: underline; font-weight: bold; color:#000">
+                                        night stands</a> for hotel rooms,
+                                    <a href="pdetail5.html" style="text-decoration: underline; font-weight: bold; color:#000">micro
+                                        fridge combo </a> rooms,
+                                    <a href="pdetail6.html" style="text-decoration: underline; font-weight: bold; color:#000">
+                                        drawers </a>for hotel rooms,
+                                    <a href="pdetail7.html" style="text-decoration: underline; font-weight: bold; color:#000">
+                                        media panel</a> for hotel rooms,
+                                    <a href="pdetail8.html" style="text-decoration: underline; font-weight: bold; color:#000">
+                                        luggage bench</a> for hotel rooms,
+                                    <a href="pdetail9.html"
+                                        style="text-decoration: underline; font-weight: bold; color:#000">desk</a> for hotel rooms,
+                                    <a href="pdetail10.html" style="text-decoration: underline; font-weight: bold;">
+                                        kitchen</a> for hotel rooms,
+                                   
+                                    <a href="pdetail11.html" style="text-decoration: underline; font-weight: bold; color:#000">
+                                        vanity</a> for hotel rooms,
+                                    <a href="pdetail13.html" style="text-decoration: underline; font-weight: bold; color:#000">
+                                        lounge chairs </a> hotel rooms, 
+                                       <a href="pdetail12.html" style="text-decoration: underline; font-weight: bold; color:#000">
+
+                                     dining</a>  furniture for
+                                    hotel rooms, wall
+                                    art for hotel rooms, all tailored to meet USA hotel brand
+                                    standards.
+
+
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a2">
+                                Can you design custom furniture collections for our hotel brand?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a2">
+                                <p>Absolutely,Our design team offers custom hotel furniture design services in the USA
+                                    to create fully customized furniture collections tailored to your hotel brand
+                                    requirements or individual property needs. Each furniture piece is crafted to match
+                                    your vision, functionality needs, and guest experience goals whether for a
+                                    franchised property under a major brand or an independent hotel looking for a
+                                    distinctive look.
+
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a3">
+                                Do you have experience working with hotel chains?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a3">
+                                <p>
+                                <p>
+                                    Over the years, We have extensive experience working on hospitality furniture
+                                    projects
+                                    for major hotel chains in the USA including,
+                                    <a href="project 2.html"
+                                        style="text-decoration: underline; font-weight: bold; color:#000">AmericInn By Wyndham
+                                        hotel </a>,furniture project
+                                    <a href="project 5.html" style="text-decoration: underline; font-weight: bold; color:#000">Days
+                                        Inn By Wyndham
+                                        hotel </a>,furniture project
+                                    <a href="project 7.html"
+                                        style="text-decoration: underline; font-weight: bold; color:#000">Microtel by Wyndham
+                                        hotel </a>,furniture project
+                                    <a href="project 8.html"
+                                        style="text-decoration: underline; font-weight: bold; color:#000">Ramada by Wyndham hotel
+                                    </a>,furniture project
+                                    <a href="project 9.html" style="text-decoration: underline; font-weight: bold; color:#000">Super
+                                        8 by Wyndham hotel
+                                    </a>,furniture project
+                                    <a href="project 1.html"
+                                        style="text-decoration: underline; font-weight: bold; color:#000">Comfort Inn by Choice
+                                        hotels </a>,furniture project
+                                    <a href="project 3.html"
+                                        style="text-decoration: underline; font-weight: bold; color:#000">Americas Best Value Inn
+                                        hotel </a>,furniture project
+                                    <a href="project 4.html" style="text-decoration: underline; font-weight: bold; color:#000">Best
+                                        Western hotel
+                                    </a>,furniture project
+                                    <a href="project 6.html"
+                                        style="text-decoration: underline; font-weight: bold; color:#000">Econolodge by Choice
+                                        hotels </a>,furniture project
+                                    <a href="project 10.html"
+                                        style="text-decoration: underline; font-weight: bold; color:#000">Quality Inn by Choice
+                                        hotels </a>.furniture project
+                                    Our team understands hotel brand standards and consistently delivers FF&E case goods
+                                    that meet quality, durability, and design expectations across multiple locations.
+                                </p>
+
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a4">
+                                What’s your typical production and delivery timeline?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a4">
+                                <p>As soon as the design is approved,We typically complete production and dispatch
+                                    within 4 to 6 weeks. Our in-house furniture manufacturing team begins production
+                                    immediately once the design is finalized and approved. Our efficient process ensures
+                                    quick turnaround times without compromising quality, making us a reliable partner
+                                    for hotel furniture exports to the USA.
+
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a5">
+                                Where is your manufacturing facility located?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a5">
+                                <p>Our furniture manufacturing facility is located in Ahmedabad, Gujarat, India. We
+                                    handle the entire process of mass production of FF&E case goods through our
+                                    integrated setup and experienced team including designing and prototyping all under
+                                    one roof.
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a6">
+                                How do you handle shipping and logistics to the USA?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a6">
+                                <p>We manage international shipping and logistics through trusted freight partners with
+                                    experience in hotel furniture exports from India to the USA. We take care of all
+                                    customs documentation, packaging, and tracking to ensure your FF&E shipments are
+                                    delivered safely and on schedule to your hotel site anywhere in the United States.
+
+                                </p>
+                            </div>
+                            <div class="accordion-section-title" data-tab="#accordion-a7">
+                                How do I start a project with you?
+                            </div>
+                            <div class="accordion-section-content" id="accordion-a7">
+                                <p>
+                                    Getting started is simple: fill out our
+                                    <a href="contact.html"
+                                        style="text-decoration: underline; font-weight: bold;">Contact</a>
+                                    form with a few project details, and our team will contact you to proceed
+                                    further.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <style>
+    .bloglist {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: #fff;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+    .post-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .post-image img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .post-text {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .btn-main {
+        align-self: start;
+    }
+
+    @media (max-width: 991px) {
+        .post-image img {
+            height: 180px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .post-image img {
+            height: 160px;
+        }
+    }
+</style>
+
+<section>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6 offset-lg-3 text-center">
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">Blogs</h2>
+                <div class="spacer-single"></div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bloglist rounded-20px">
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="images/blog/blog1/blog1.jpg" alt="" class="lazy">
+                        </div>
+                        <div class="post-text padding40 pt-2">
+                            <h4><a href="blog-single.html">How to Choose the Perfect Furniture for Your Home</a></h4>
+                            <a class="btn-main btn-light-trans mt-3" href="blog-single.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bloglist rounded-20px">
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="images/blog/blog2/blog2.png" alt="" class="lazy">
+                        </div>
+                        <div class="post-text padding40 pt-2">
+                            <h4><a href="blog-single2.html">How to Make the Most of a Small Space with Multifunctional Furniture?</a></h4>
+                            <a class="btn-main btn-light-trans mt-3" href="blog-single2.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="bloglist rounded-20px">
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="images/blog/blog3/blog3.png" alt="" class="lazy">
+                        </div>
+                        <div class="post-text padding40 pt-2">
+                            <h4><a href="blog-single3.html">Wooden Tables for Transitional Design</a></h4>
+                            <a class="btn-main btn-light-trans mt-3" href="blog-single3.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- <section class="no-top relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="rounded-20px bg-color  overflow-hidden">
+                                <div class="row align-items-center g-0">
+                                    <div class="col-lg-6">
+                                        <div
+                                            class="h-100 padding60 sm-padding40 overflow-hidden position-relative text-light jarallax">
+                                            <div class="spacer-double"></div>
+                                            <img src="images/background/3.webp" class="jarallax-img" alt="">
+                                            <div class="spacer-double"></div>
+                                        </div>
+                                    </div><div class="p-5 bg-color text-white rounded-20px team-box">
+
+                                    <div class="col-lg-6 text-center">
+                                        <div class="h-100 text-light">
+                                            <div class="spacer-double"></div>
+                                            <div class="subtitle s2 mb-2">24 Hours &amp; Emergencies</div>
+                                            <h2 class="phone mb0 wow fadeInUp" data-wow-delay=".2s"><i
+                                                    class="icofont-phone-circle"></i> +919727792087</h2>
+                                            <div class="spacer-double"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+    <!-- ✅ Brands Section -->
+    <section class="no-top">
+        <div class="pt50 bg-white">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-12 text-center wow fadeInUp">
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s" style="margin-top: -5px;">Our recent projects</h2>
+                    </div>
+
+                    <div class="col-md-12 wow fadeInUp">
+                        <div id="owl-logo" class="logo-carousel owl-carousel owl-theme">
+                            <img src="images/workingWithBrands/wyndham-garden-vector-logo-small-removebg-preview.png"
+                                class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Super_8_Motel.svg-removebg-preview.png"
+                                class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/ramada4832-removebg-preview.png" class="img-fluid px-4"
+                                alt="">
+                            <img src="images/workingWithBrands/microtel-inn-suites-by-wyndham.png"
+                                class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Days_Inn_logo.svg.png" class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/candlewood-suites6397-removebg-preview.png"
+                                class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Best-Western-logo2-1.png" class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Americas_Best_Value_Inn_Logo.png" class="img-fluid px-4"
+                                alt="">
+                            <img src="images/workingWithBrands/AmericInn_logo.svg.png" class="img-fluid px-4" alt="">
+                            <img src="images/workingWithBrands/Comfort_Inn_Logo-removebg-preview.png"
+                                class="img-fluid px-4" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="bg-color text-light pt40 pb40">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-9">
+                            <h3 class="mb-1"><i class="icofont-check-circled fs-32 me-3 id-color-2"></i>Quality heating
+                                &amp; air conditioning solutions</h3>
+                        </div>
+
+                        <div class="col-lg-3 text-lg-end text-start">
+                            <a class="btn-main bg-color-2" href="contact.html">Schedule Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+    </div>
+    <!-- content close -->
+
+    <!-- footer begin -->
+    <footer style="background-color: #000; color: #fff; padding: 40px 0;">
+        <div style="width: 100%; padding-inline: 20px;">
+            <div class="footer-container"
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; max-width: 1584px; margin: 0 auto;">
+
+                <!-- About Section -->
+                <div style="flex: 1 1 300px;">
+                    <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo" style="margin-bottom: 26px">
+
+                    <p style="line-height: 1.9;">
+
+                        Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
+                        production capabilities. From guest room case goods to custom solutions, we craft durable,
+                        high-quality furniture tailored to the needs of the hospitality industry—delivering across
+                        global markets with a commitment to excellence and reliability.
+                    </p>
+                </div>
+
+                <!-- Company Links -->
+                <div style="flex: 1 1 200px;">
+                    <div class="company-links" style="margin-left: 186px;">
+                        <h5 style="border-bottom: 2px solid#f5bb0e; display: inline-block; padding-bottom: 5px;">Company
+                        </h5>
+
+                        <ul class="footer-links"
+                            style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div style="flex: 1 1 250px;">
+                    <h5
+                        style="border-bottom: 2px solid #f5bb0e;; display: inline-block; padding-bottom: 5px; margin-bottom: 26px;">
+                        Contact us</h5>
+
+                    <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Sales
+                        Office</div>
+                    <div style="color: white;">2117 N Main St,Cleburne, TX 76033, United States</div>
+
+                    <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Factory
+                        Location</div>
+                    <div style="color: white;">Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, Kuha,
+                        Gujarat 382433</div>
+                    <br>
+
+                    <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank">
+                        <i class="icofont-envelope"></i> info@endlos.furniture
+                    </a>
+                    <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"><i
+                                class="icofont-phone"></i>+1(945)267-7548</a></div>
+                    <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"><i
+                                class="icofont-phone"></i>+919727792087</a></div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="bottom-section"
+                style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
+                <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
+                <div style="margin-top: 10px;">
+                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/19452677548" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="icofont-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <style>
+        </style>
+    </footer>
+
+
+    <!-- footer close -->
+    </div>
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/custom-marquee.js"></script>
+    <script src="js/custom-swiper-1.js"></script>
+    <script>
+        const track = document.getElementById('sliderTrack');
+        const itemWidth = track.children[0].offsetWidth; // assumes uniform width
+        let index = 0;
+
+        setInterval(() => {
+            index++;
+            // Reset if over half (since duplicated)
+            if (index >= track.children.length / 2) {
+                track.style.transition = 'none';
+                track.style.transform = 'translateX(0px)';
+                index = 1;
+                // allow transition again
+                setTimeout(() => {
+                    track.style.transition = 'transform 0.5s ease-in-out';
+                    track.style.transform = `translateX(-${itemWidth * index}px)`;
+                }, 50);
+            } else {
+                track.style.transform = `translateX(-${itemWidth * index}px)`;
+            }
+        }, 2000); // 1 second interval
+    </script>
+
+</body>
+
+</html>

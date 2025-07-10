@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Endlos-Hospitality</title>
+    <link rel="icon" href="images/hospitalityfavicon.ico" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="CoolAir — Air Conditioner & HVAC Repair Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919999999999" class="whatsapp-button" target="_blank" title="Chat on WhatsApp" style="margin: 13px;">
+  <div class="whatsapp-icon-container">
+    <div class="pulse-ring"></div>
+    <div class="whatsapp-icon">
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </div>
+  <span class="tooltip">Chat with us</span>
+</a>
+
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+/* WhatsApp Button Container */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Wrapper to center pulse ring and icon */
+.whatsapp-icon-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+/* Pulse Ring */
+.pulse-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #25D366;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: pulseRing 1.5s infinite;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+  background-color: #25D366;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0px 4px 10px rgba(0, 0, 0, 0.3),
+    0px -4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #25D366;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.whatsapp-button:hover .tooltip {
+  opacity: 1;
+  right: 80px;
+}
+
+/* Responsive: adjust for smaller screens */
+@media (max-width: 480px) {
+  .whatsapp-icon-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-icon {
+    font-size: 22px;
+  }
+
+  .tooltip {
+    font-size: 12px;
+    padding: 5px 10px;
+    right: 60px;
+  }
+
+  .whatsapp-button:hover .tooltip {
+    right: 70px;
+  }
+}
+</style>
+    <div id="wrapper">
+        <!-- <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div> -->
+        <!-- <div class="scrollbar-v show-on-scroll"></div> -->
+
+        <!-- page preloader begin -->
+        <!-- <div id="de-loader"></div> -->
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="transparent scroll-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="https://wa.me/19452677548"><i
+                                                class="icofont-phone"></i>+1(945)267-7548</a></div>
+                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087"><i
+                                                class="icofont-phone"></i>+919727792087</a></div>
+                                    <div class="topbar-widget">
+                                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture"
+                                            target="_blank">
+                                            <i class="icofont-envelope"></i>info@endlos.furniture
+                                        </a>
+                                    </div>
+                                    <!-- <div class="topbar-widget"><a href="#"><i class="icofont-wall-clock"></i>Mon - Fri
+                                            08.00 - 18.00</a></div> -->
+                                </div>
+
+
+                                <div class="social-icons" style="margin-top: -9px;">
+                                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank">
+                                        <i class="fa-brands fa-facebook fa-lg"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                                        style="margin-top: -9px;"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                                    <a href="https://www.instagram.com/endlos.furniture?igsh=MXR2Z3FyOHNydHhoOA=="
+                                        target="_blank">
+                                        <i class="fa-brands fa-instagram fa-lg"></i>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <!-- <li><a class="menu-item" href="#">Home</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="index.html">Homepage One</a></li>
+                                            <li><a class="menu-item" href="homepage-2.html">Homepage Two</a></li>
+                                            <li><a class="menu-item" href="homepage-3.html">Homepage Three</a></li>
+                                            <li><a class="menu-item" href="homepage-4.html">Homepage Four</a></li>
+                                            <li><a class="menu-item" href="homepage-5.html">Homepage Five</a></li>
+                                            <li><a class="menu-item" href="homepage-6.html">Homepage Six</a></li>
+                                            <li><a class="menu-item" href="homepage-7.html">Homepage Seven</a></li>
+                                            <li><a class="menu-item" href="homepage-8.html">Homepage Eight</a></li>
+                                            <li><a class="menu-item" href="homepage-9.html">Homepage Nine</a></li>
+                                            <li><a class="menu-item new" href="homepage-10.html">Homepage Ten</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="#">Collections</a>
+                                        <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+                                    </li>
+
+                                    <!-- <li><a class="menu-item" href="collections.html">Collections</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+
+
+                                    <li><a class="menu-item" href="products.html" style="color: #000;">Products</a>
+                                    <li><a class="menu-item" href="projects.html" style="color: #000;">Projects</a></li>
+                                    <li><a class="menu-item" href="about.html" style="color: #000;">About Us</a></li>
+
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="products.html">All Products</a></li>
+                                            <li><a class="menu-item" href="product-details-new.html">Product Details
+                                                    New</a></li>
+                                            <li><a class="menu-item" href="product-details.html">Product Details
+                                                    Simple</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
+                                    <li><a class="menu-item" href="contact.html" style="color: #000;">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+                            <style>
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    /* Optional: to ensure text is readable */
+                                }
+
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                                    BACKGROUND: WHITE;
+                                    /* Normal shadow */
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                                    /* Deeper shadow on hover */
+                                }
+                            </style>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <!-- section begin -->
+            <section id="subheader">
+                <div class="container relative z-index-1000">
+                    <div class="row g-4 gx-5 align-items-center">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+
+                            <h1>Head Board</h1>
+                        </div>
+
+                        <div class="spacer-double"></div>
+
+                        <div class="col-lg-6">
+                            <div class="bg-color-3 relative overflow-hidden rounded-20px mb-4 p-3 pb-4">
+                                <div class="text-center">
+                                    <img src="images/products/HB-FV.png" class="w-80" alt="">
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="owl-custom-nav menu-float px-5" style="margin-top: 10px;"
+                                        data-target="#img-carousel">
+                                        <a class="btn-next"></a>
+                                        <a class="btn-prev"></a>
+
+                                        <div id="img-carousel" class="owl-carousel owl-theme owl-4-margin-15">
+                                            <div class="item">
+                                                <a href="images/products/HB-CV.png" class="image-popup d-block hover">
+                                                    <div class="relative overflow-hidden rounded-10">
+                                                        <div
+                                                            class="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
+                                                            <h4 class="mb-0 hover-scale-in-3"><i
+                                                                    class="fa fa-search-plus"></i></h4>
+                                                        </div>
+                                                        <div class="absolute w-100 h-100 top-0 bg-dark hover-op-05">
+                                                        </div>
+                                                        <img src="images/products/HB-CV.png"
+                                                            class="img-fluid hover-scale-1-2" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/products/HB-HR.png" class="image-popup d-block hover">
+                                                    <div class="relative overflow-hidden rounded-10">
+                                                        <div
+                                                            class="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
+                                                            <h4 class="mb-0 hover-scale-in-3"><i
+                                                                    class="fa fa-search-plus"></i></h4>
+                                                        </div>
+                                                        <div class="absolute w-100 h-100 top-0 bg-dark hover-op-05">
+                                                        </div>
+                                                        <img src="images/products/HB-HR.png"
+                                                            class="img-fluid hover-scale-1-2" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/products/HB-LV.png" class="image-popup d-block hover">
+                                                    <div class="relative overflow-hidden rounded-10">
+                                                        <div
+                                                            class="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
+                                                            <h4 class="mb-0 hover-scale-in-3"><i
+                                                                    class="fa fa-search-plus"></i></h4>
+                                                        </div>
+                                                        <div class="absolute w-100 h-100 top-0 bg-dark hover-op-05">
+                                                        </div>
+                                                        <img src="images/products/HB-LV.png"
+                                                            class="img-fluid hover-scale-1-2" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/products/HB-NS.png" class="image-popup d-block hover">
+                                                    <div class="relative overflow-hidden rounded-10">
+                                                        <div
+                                                            class="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
+                                                            <h4 class="mb-0 hover-scale-in-3"><i
+                                                                    class="fa fa-search-plus"></i></h4>
+                                                        </div>
+                                                        <div class="absolute w-100 h-100 top-0 bg-dark hover-op-05">
+                                                        </div>
+                                                        <img src="images/products/HB-NS.png"
+                                                            class="img-fluid hover-scale-1-2" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a href="images/products/HB-RV.png" class="popup-youtube d-block hover">
+                                                    <div class="relative overflow-hidden rounded-10">
+                                                        <div
+                                                            class="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
+                                                            <h4 class="mb-0 hover-scale-in-3"><i
+                                                                    class="fa fa-search-plus"></i></h4>
+                                                        </div>
+                                                        <div class="absolute w-100 h-100 top-0 bg-dark hover-op-05">
+                                                        </div>
+                                                        <img src="images/products/HB-RV.png"
+                                                            class="img-fluid hover-scale-1-2" alt="">
+                                                    </div>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Inside your HTML file -->
+                        <div class="col-lg-6" style="margin-top: -70px; text-align: center;">
+                            <h2 style="text-align: left;">A Touch of Elegance for Every Room</h2>
+                            <p style="margin-bottom: 30px; text-align: left; font-family: sans-serif;">
+                                Designed to elevate the overall look of your guest rooms, this headboard adds a
+                                stylish and cohesive finish to your space. Its clean lines and thoughtful detailing
+                                bring both comfort and character to any hospitality setting.
+                            </p>
+
+                            <!-- Centered and Enlarged Responsive Logos -->
+                            <h4 style="text-align: left; margin-bottom: -50px;">Material Option</h4>
+                            <div class="logo-container">
+                                <a href="https://drive.google.com/file/d/11O-FDl-rJJdiMQctzp1WzgXJ9SvnNIWH/view?usp=sharing" target="_blank">
+                                    <img src="images/projectlogo/1.png" alt="Centuryply Logo" class="logo-img">
+                                </a>
+
+                                <a href="https://drive.google.com/file/d/1xc9newJ32rAGhriMAVVCjSY1e3EDPK7x/view?usp=sharing" target="_blank">
+                                    <img src="images/projectlogo/2.png" alt="Merino Logo" class="logo-img">
+                                </a>
+
+                                <a href="https://drive.google.com/file/d/1kN1WtbkX-Li8hjymQLBgDD1B3p7bJqFA/view?usp=sharing" target="_blank">
+                                    <img src="images/projectlogo/3.png" alt="Royale Touche Logo" class="logo-img">
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- <section class="pt-0">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <h2>Features</h2>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6">
+                            <div class="relative">
+                                <img src="images/products/icons/bulb.png" class="w-80px mb-3" alt="">
+                                <div class="relative">
+                                    <h4>Energy Saving</h4>
+                                    <p class="mb-0">Designed to consume minimal power, reducing your electricity bills without compromising performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6">
+                            <div class="relative">
+                                <img src="images/products/icons/silence.png" class="w-80px mb-3" alt="">
+                                <div class="relative">
+                                    <h4>Quiet Operation</h4>
+                                    <p class="mb-0">Operates at a low noise level, ensuring a peaceful environment for work or rest.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="relative">
+                                <img src="images/products/icons/wifi.png" class="w-80px mb-3" alt="">
+                                <div class="relative">
+                                    <h4>Smart Wi-Fi</h4>
+                                    <p class="mb-0">Allows users to control the AC remotely using a smartphone app or voice assistants like Alexa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6">
+                            <div class="relative">
+                                <img src="images/products/icons/speedometer.png" class="w-80px mb-3" alt="">
+                                <div class="relative">
+                                    <h4>Turbo Cooling</h4>
+                                    <p class="mb-0">Instant cooling by operating the AC at maximum capacity for a short period, Cools the room quickly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="no-top no-bottom overflow-hidden bg-light">
+                <div class="container-fluid position-relative half-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Image -->
+                            <div class="col-lg-6 position-lg-absolute left-half h-100">
+                                <!-- <div class="image" data-bgimage="url(images/misc/11.webp) center"></div> -->
+
+
+                                <style>
+                                    * {
+                                        box-sizing: border-box;
+                                    }
+
+                                    body {
+                                        font-family: Verdana, sans-serif;
+                                    }
+
+                                    .slideshow-container {
+                                        max-width: 1000px;
+                                        position: relative;
+                                        margin: auto;
+                                    }
+
+                                    .mySlides {
+                                        position: absolute;
+                                        width: 100%;
+                                        opacity: 0;
+                                        transition: opacity 2s ease-in-out;
+                                    }
+
+                                    .mySlides.active {
+                                        opacity: 1;
+                                        position: relative;
+                                    }
+
+                                    .text {
+                                        color: #f2f2f2;
+                                        font-size: 15px;
+                                        padding: 8px 12px;
+                                        position: absolute;
+                                        bottom: 8px;
+                                        width: 100%;
+                                        text-align: center;
+                                    }
+
+                                    .numbertext {
+                                        color: #f2f2f2;
+                                        font-size: 12px;
+                                        padding: 8px 12px;
+                                        position: absolute;
+                                        top: 0;
+                                    }
+
+                                    @media only screen and (max-width: 300px) {
+                                        .text {
+                                            font-size: 11px;
+                                        }
+                                    }
+                                </style>
+
+
+                                <body>
+
+                                    <!-- <h2>Automatic Slideshow</h2>
+                                    <p>Change image every 2 seconds:</p> -->
+
+                                    <div class="slideshow-container">
+                                        <div class="mySlides active">
+                                            <div class="numbertext">1 / 3</div>
+                                            <img src="images/projects/11.png" style="width:100%">
+                                            <!-- <div class="text">Caption Text</div> -->
+                                        </div>
+
+                                        <div class="mySlides">
+                                            <div class="numbertext">2 / 3</div>
+                                            <img src="images/projects/22.png" style="width:100%">
+                                            <!-- <div class="text">Caption Two</div> -->
+                                        </div>
+
+                                        <div class="mySlides">
+                                            <div class="numbertext">3 / 3</div>
+                                            <img src="images/projects/33.png" style="width:100%">
+                                            <!-- <div class="text">Caption Three</div> -->
+                                        </div>
+                                    </div>
+
+
+                                    <br>
+
+                                    <div style="text-align:center">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+
+                                    <script>
+                                        let slideIndex = 0;
+                                        const slides = document.getElementsByClassName("mySlides");
+
+                                        function showSlides() {
+                                            for (let i = 0; i < slides.length; i++) {
+                                                slides[i].classList.remove("active");
+                                            }
+                                            slideIndex++;
+                                            if (slideIndex > slides.length) { slideIndex = 1; }
+                                            slides[slideIndex - 1].classList.add("active");
+                                            setTimeout(showSlides, 4000); // Change image every 4 seconds
+                                        }
+
+                                        showSlides();
+                                    </script>
+
+                                </body>
+                            </div>
+                            <!-- Text -->
+                            <div class="col-lg-5 offset-lg-7 py-5 pe-lg-5">
+                                <div class="spacer-double sm-hide"></div>
+                                <h3>
+                                    Where comfort meets craftsmanship — we don’t just build
+                                    furniture, we shape guest experiences.</h3>
+                                <div class="spacer-double sm-hide"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <h2 class="mb-0">Specifications</h2>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="accordion s2">
+                                <div class="accordion-section">
+                                    <div class="accordion-section-title" data-tab="#accordion-a1">
+                                        Material
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a1">
+                                        <ul class="ul-style-2">
+                                            <li> CARB Certified MDF</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a2">
+                                        Upholstery
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a2">
+                                        <ul class="ul-style-2">
+                                            <li>High-performance vinyl or fabric upholstery designed for hospitality
+                                                use—easy
+                                                to clean, stain-resistant, and available in multiple textures.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a3">
+                                        Foam
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a3">
+                                        <ul class="ul-style-2">
+                                            <li>Hospitality-grade polyurethane foam with medium firmness for
+                                                a balanced blend of comfort and durability.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a4">
+                                        Mounting Style
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a4">
+                                        <ul class="ul-style-2">
+                                            <li> Wall-mounted with reinforced brackets for a secure, space-efficient
+                                                installation. Optional
+                                                keyhole or cleat mounting systems available.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a5">
+                                        Dimensions
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a5">
+                                        <ul class="ul-style-2">
+                                            <li> King Size: 78” W x 3” D x 48” H / 36” H / 30” H</li>
+                                            <li> Queen Size: 62” W x 3” D x 48” H / 36” H / 30” H</li>
+                                            <li> XL Full Size: 56” W x 3” D x 48” H / 36” H / 30” H</li>
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a6">
+                                        Finish Options
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a6">
+                                        <ul class="ul-style-2">
+                                            <li>Available in wood laminate, textured vinyl, or matte fabric
+                                                finishes to match room décor and other case goods.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a7">
+                                        Fire Retardancy
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a7">
+                                        <ul class="ul-style-2">
+                                            <li> Upholstery and foam comply with CAL 117 fire safety standards commonly
+                                                required in U.S. hospitality settings.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a8">
+                                        Color Option
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a8">
+                                        <ul class="ul-style-2">
+                                            <li>Custom colors available.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a9">
+                                        Edge Design
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a9">
+                                        <ul class="ul-style-2">
+                                            <li>Rounded or square-edge profiles with smooth finish for guest safety and
+                                                design flexibility.</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a10">
+                                        Cleaning
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a10">
+                                        <ul class="ul-style-2">
+                                            <li> Designed for low maintenance—wipe clean with mild soap solution or
+                                                approved upholstery cleaner</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a11">
+                                        Warranty
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a11">
+                                        <ul class="ul-style-2">
+                                            <li>Covered under a 2-year limited warranty for structural and manufacturing
+                                                defects</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a12">
+                                        Packaging
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a12">
+                                        <ul class="ul-style-2">
+                                            <li> Packaging - Securely packed using 5-ply virgin corrugated cartons with
+                                                edge protection and cushioning for safe transport.</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="no-top no-bottom overflow-hidden bg-light">
+                <div class="container-fluid position-relative half-fluid">
+                  <div class="container">
+                    <div class="row">
+                     
+                      <div class="col-lg-6 position-lg-absolute right-half h-100">
+                        <div class="image" data-bgimage="url(images/misc/10.webp) center"></div>
+                      </div>
+                  
+                      <div class="col-lg-5 py-5 pe-lg-5">
+                            <div class="spacer-double sm-hide"></div>
+                            <h3>Bringing happiness and comfort to every customer with top-tier air conditioning solutions designed for ultimate cooling satisfaction.</h3>
+                            <div class="spacer-double sm-hide"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section> -->
+
+            <!-- <section>
+                <div class="container">
+                    <div class="row g-4 gx-5">
+                        <div class="col-lg-12">
+                            <h2 class="mb-0">Reviews</h2>
+                        </div>         
+                        <div class="col-lg-6">
+                            <div class="de-ratings-bar">
+                                <div class="d-bar">
+                                    <div class="c1">5 stars</div>
+                                    <div class="c2">
+                                        <div class="d-bar-bg" data-value="50">
+                                            <div class="d-bar-val"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c3">
+                                        50
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="de-ratings-bar">
+                                <div class="d-bar">
+                                    <div class="c1">4 stars</div>
+                                    <div class="c2">
+                                        <div class="d-bar-bg" data-value="70">
+                                            <div class="d-bar-val"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c3">
+                                        70
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="de-ratings-bar">
+                                <div class="d-bar">
+                                    <div class="c1">3 stars</div>
+                                    <div class="c2">
+                                        <div class="d-bar-bg" data-value="30">
+                                            <div class="d-bar-val"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c3">
+                                        30
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="de-ratings-bar">
+                                <div class="d-bar">
+                                    <div class="c1">2 stars</div>
+                                    <div class="c2">
+                                        <div class="d-bar-bg" data-value="10">
+                                            <div class="d-bar-val"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c3">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="de-ratings-bar">
+                                <div class="d-bar">
+                                    <div class="c1">1 star</div>
+                                    <div class="c2">
+                                        <div class="d-bar-bg" data-value="20">
+                                            <div class="d-bar-val"></div>
+                                        </div>
+                                    </div>
+                                    <div class="c3">
+                                        20
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex">
+                                <div class="me-4">
+                                    <h1>7.5</h1>
+                                </div>
+                                <div class="de-rating-ext fs-18 d-block pt-2">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star off"></i>
+                                    </span>
+                                    <div class="fs-14 mb-0">180 reviews</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="spacer-double"></div>  
+
+                        <div class="col-lg-12">
+                            <div class="relative mb-3">
+                                <img src="images/testimonial/1.jpg" class="abs w-70px circle" alt="">
+                                <div class="ml-90">
+                                    <div class="de-rating-ext fs-14 d-block mb-1">
+                                        <span class="d-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                    </div>
+
+                                    <h4>Excellent product!</h4>
+                                    <p class="mb-1">This AC is powerful, quiet, and smart—perfect for anyone who wants cooling with convenience. Highly recommend!</p>
+                                    <div class="fs-14 fw-bold">John Smith</div>
+                                </div>
+                            </div>
+
+                            <div class="relative mb-3">
+                                <img src="images/testimonial/2.jpg" class="abs w-70px circle" alt="">
+                                <div class="ml-90">
+                                    <div class="de-rating-ext fs-14 d-block mb-1">
+                                        <span class="d-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star off"></i>
+                                        </span>
+                                    </div>
+
+                                    <h4>Powerful, quiet, and smart AC!</h4>
+                                    <p class="mb-1">I love this air conditioner! It cools fast, runs quietly, and saves energy. The Wi-Fi control is super handy, letting me adjust settings from my phone.</p>
+                                    <div class="fs-14 fw-bold">Chantell Bastic</div>
+                                </div>
+                            </div>
+
+                            <div class="relative mb-3">
+                                <img src="images/testimonial/3.jpg" class="abs w-70px circle" alt="">
+                                <div class="ml-90">
+                                    <div class="de-rating-ext fs-14 d-block mb-1">
+                                        <span class="d-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star off"></i>
+                                            <i class="fa fa-star off"></i>
+                                        </span>
+                                    </div>
+
+                                    <h4>It could be better!</h4>
+                                    <p class="mb-1">It cools quickly, runs quietly, and saves energy, making it a solid upgrade from my old AC.</p>
+                                    <div class="fs-14 fw-bold">Leopoldo Amis</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section> -->
+
+        </div>
+        <!-- content close -->
+        <!-- footer begin -->
+        <footer style="background-color: #000; color: #fff; padding: 40px 0; font-family: sans-serif;">
+            <div style="width: 100%; padding-inline: 20px;">
+                <div class="footer-container"
+                    style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; max-width: 1584px; margin: 0 auto;">
+
+                    <!-- About Section -->
+                    <div style="flex: 1 1 300px;">
+                        <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo" style="margin-bottom: 26px">
+
+                        <p style="line-height: 1.9;">
+
+                            Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
+                            production capabilities. From guest room case goods to custom solutions, we craft durable,
+                            high-quality furniture tailored to the needs of the hospitality industry—delivering across
+                            global markets with a commitment to excellence and reliability.
+                        </p>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div style="flex: 1 1 200px;">
+                        <div class="company-links" style="margin-left: 186px;">
+                            <h5 style="border-bottom: 2px solid#f5bb0e; display: inline-block; padding-bottom: 5px;">
+                                Company</h5>
+
+                            <ul class="footer-links"
+                                style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div style="flex: 1 1 250px;">
+                        <h5
+                            style="border-bottom: 2px solid #f5bb0e;; display: inline-block; padding-bottom: 5px; margin-bottom: 26px;">
+                            Contact us</h5>
+
+                        <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Sales
+                            Office</div>
+                        <div style="color: white;">2117 N Main St,Cleburne, TX 76033, United States</div>
+
+                        <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i>
+                            Factory Location</div>
+                        <div style="color: white;">Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, Kuha,
+                            Gujarat 382433</div>
+                        <br>
+
+                        <a href="mailto:info@endlos.furniture" target="_blank">
+                            <i class="icofont-envelope"></i> info@endlos.furniture
+                        </a>
+                        <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"><i
+                                    class="icofont-phone"></i>+1(945)267-7548</a></div>
+                        <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"><i
+                                    class="icofont-phone"></i>+919727792087</a></div>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="bottom-section"
+                    style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
+                    <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/19452677548" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="icofont-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <style>
+                @media (max-width: 768px) {
+                    footer .footer-container {
+                        flex-direction: column !important;
+                        gap: 30px !important;
+                    }
+
+                    footer .company-links {
+                        margin-left: 0 !important;
+                    }
+
+                    footer .bottom-section {
+                        flex-direction: column !important;
+                        text-align: center;
+                        gap: 15px;
+                    }
+
+                    footer .bottom-section div {
+                        margin-top: 10px !important;
+                    }
+                }
+            </style>
+        </footer>
+
+
+        <!-- footer close -->
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+
+</body>
+
+</html>

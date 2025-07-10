@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Endlos-Hospitality</title>
+    <link rel="icon" href="images/hospitalityfavicon.ico" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="CoolAir — Air Conditioner & HVAC Repair Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-button" target="_blank" title="Chat on WhatsApp"
+        style="margin: 13px;">
+        <div class="whatsapp-icon-container">
+            <div class="pulse-ring"></div>
+            <div class="whatsapp-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <span class="tooltip">Chat with us</span>
+    </a>
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* WhatsApp Button Container */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Wrapper to center pulse ring and icon */
+        .whatsapp-icon-container {
+            position: relative;
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Pulse Ring */
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #25D366;
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: pulseRing 1.5s infinite;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        @keyframes pulseRing {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            70% {
+                transform: scale(1.8);
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* WhatsApp Icon */
+        .whatsapp-icon {
+            background-color: #25D366;
+            color: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow:
+                0px 4px 10px rgba(0, 0, 0, 0.3),
+                0px -4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-icon:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #25D366;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            z-index: 1;
+        }
+
+        .whatsapp-button:hover .tooltip {
+            opacity: 1;
+            right: 80px;
+        }
+
+        /* Responsive: adjust for smaller screens */
+        @media (max-width: 480px) {
+            .whatsapp-icon-container {
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-icon {
+                font-size: 22px;
+            }
+
+            .tooltip {
+                font-size: 12px;
+                padding: 5px 10px;
+                right: 60px;
+            }
+
+            .whatsapp-button:hover .tooltip {
+                right: 70px;
+            }
+        }
+    </style>
+    <div id="wrapper">
+        <!-- <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div> -->
+        <!-- <div class="scrollbar-v show-on-scroll"></div> -->
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="transparent scroll-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="https://wa.me/19452677548"><i
+                                                class="icofont-phone"></i>+1(945)267-7548</a></div>
+                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087"><i
+                                                class="icofont-phone"></i>+919727792087</a></div>
+                                  <div class="topbar-widget">
+                                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture"
+                                            target="_blank">
+                                            <i class="icofont-envelope"></i>info@endlos.furniture
+                                        </a>
+                                    </div>
+                                    <!-- <div class="topbar-widget"><a href="#"><i class="icofont-wall-clock"></i>Mon - Fri
+                                            08.00 - 18.00</a></div> -->
+                                </div>
+
+                                <div class="social-icons" style="margin-top: -9px;">
+                                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank">
+                                        <i class="fa-brands fa-facebook fa-lg"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                                        style="margin-top: -9px;"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                                    <a href="https://www.instagram.com/endlos.furniture?igsh=MXR2Z3FyOHNydHhoOA=="
+                                        target="_blank">
+                                        <i class="fa-brands fa-instagram fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <!-- <li><a class="menu-item" href="#">Home</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="index.html">Homepage One</a></li>
+                                            <li><a class="menu-item" href="homepage-2.html">Homepage Two</a></li>
+                                            <li><a class="menu-item" href="homepage-3.html">Homepage Three</a></li>
+                                            <li><a class="menu-item" href="homepage-4.html">Homepage Four</a></li>
+                                            <li><a class="menu-item" href="homepage-5.html">Homepage Five</a></li>
+                                            <li><a class="menu-item" href="homepage-6.html">Homepage Six</a></li>
+                                            <li><a class="menu-item" href="homepage-7.html">Homepage Seven</a></li>
+                                            <li><a class="menu-item" href="homepage-8.html">Homepage Eight</a></li>
+                                            <li><a class="menu-item" href="homepage-9.html">Homepage Nine</a></li>
+                                            <li><a class="menu-item new" href="homepage-10.html">Homepage Ten</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="#">Collections</a>
+                                        <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+                                    </li>
+
+                                    <!-- <li><a class="menu-item" href="collections.html">Collections</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+
+
+                                    <li><a class="menu-item" href="products.html">Products</a>
+                                    <li><a class="menu-item" href="projects.html">Projects</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="products.html">All Products</a></li>
+                                            <li><a class="menu-item" href="product-details-new.html">Product Details
+                                                    New</a></li>
+                                            <li><a class="menu-item" href="product-details.html">Product Details
+                                                    Simple</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
+                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+                            <style>
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    /* Optional: to ensure text is readable */
+                                }
+
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                                    BACKGROUND: WHITE;
+                                    /* Normal shadow */
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                                    /* Deeper shadow on hover */
+                                }
+                            </style>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Responsive Blog Section</title>
+            <style>
+                /* Reset and basic styles */
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: Arial, sans-serif;
+                }
+
+                /* Responsive heading styling */
+                .single-line-heading {
+                    color: white;
+                    white-space: nowrap;
+                    font-size: 32px;
+                }
+
+                @media (max-width: 992px) {
+                    .single-line-heading {
+                        font-size: 26px;
+                        white-space: normal;
+                        /* Allow wrapping on medium screens */
+                    }
+                }
+
+                @media (max-width: 576px) {
+                    .single-line-heading {
+                        font-size: 20px;
+                    }
+                }
+
+                /* Extra styling for layout */
+                .no-bottom {
+                    margin-bottom: 0;
+                }
+
+                .no-top {
+                    margin-top: 0;
+                }
+
+                .jarallax {
+                    position: relative;
+                    background-size: cover;
+                    background-position: center;
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .jarallax-img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 0;
+                }
+
+                .z-index-1000 {
+                    z-index: 1000;
+                    position: relative;
+                }
+
+                .subtitle {
+                    font-size: 18px;
+                    padding: 5px 10px;
+                    display: inline-block;
+                    background: #f5bb0e;
+                    color: white;
+                }
+
+                .crumb {
+                    list-style: none;
+                    padding-left: 0;
+                    margin-top: 10px;
+                }
+
+                .crumb li {
+                    display: inline;
+                    color: white;
+                }
+
+                .de-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    z-index: 1;
+                }
+
+                .text-center {
+                    text-align: center;
+                }
+
+                .container {
+                    max-width: 1140px;
+                    margin: 0 auto;
+                    padding: 0 15px;
+                }
+
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .col-lg-12 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+
+                .mb-2 {
+                    margin-bottom: 0.5rem;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <div class="no-bottom no-top" id="content">
+                <div id="top"></div>
+
+                <!-- section begin -->
+                <section id="subheader" class="jarallax text-light">
+                    <img src="images/background/7777.PNG" class="jarallax-img" alt="">
+                    <div class="container relative z-index-1000">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 text-center">
+                                <h2 class="single-line-heading" style="color: white; letter-spacing: 1px">
+                                    How to Make the Most of a Small Space with Multifunctional Furniture
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="de-overlay"></div>
+                </section>
+
+                <!-- Responsive mobile styles only -->
+                <style>
+                    @media (max-width: 768px) {
+                        #subheader h2.single-line-heading {
+                            font-size: 22px !important;
+                            padding: 10px;
+                            line-height: 1.4;
+                        }
+                    }
+                </style>
+
+                <!-- section end -->
+
+            </div>
+
+        </body>
+
+        </html>
+
+        <!-- section close -->
+
+        <div class="bg-color relative z-index-1000 mt-40 mb40">
+            <div class="border-white-6 text-center bg-color text-white w-84px h-80px p-3 circle absolute abs-center sm-hide"
+                alt="">
+                <i class="icofont-newspaper fs-36"></i>
+            </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3 text-center">
+            <!-- <div class="subtitle bg-color-2 text-white wow fadeInUp mb-3">Top 6 Reasons</div> -->
+            <h2 class="wow fadeInUp" data-wow-delay=".2s" style="margin-top: -102px; padding-top: 148px;">Tips and
+                Advice for Making the Right Choices
+            </h2>
+            <p class="text-base md:text-lg leading-snug text-gray-700 text-center mx-auto wow fadeInUp px-8"
+                style="max-width: 673px; font-size:smalle; ">
+                Living in a small space can be a challenge, but it doesn't have to mean sacrificing comfort or style.
+                With the right Furniture, you can maximize your space and make the most of every square inch. One way to
+                do this is by investing in multifunctional Furniture that serves multiple purposes. Here are some tips
+                on how to make the most of a small space with multifunctional Furniture.
+            </p>
+
+
+
+
+            <div class="spacer-single"></div>
+        </div>
+
+        <!-- <section>
+
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-lg-8">
+                            <div class="blog-read">
+
+                                <div class="post-text">
+                                    <p>Quis sunt quis do laboris eiusmod in sint dolore sit pariatur consequat commodo
+                                        aliqua nulla ad dolor aliquip incididunt voluptate est aliquip adipisicing ea
+                                        cupidatat nostrud incididunt aliquip dolore. Sed minim nisi duis laborum est
+                                        labore nisi amet elit adipisicing proident do consectetur dolor labore sit nisi
+                                        ad proident esse ad velit nisi irure reprehenderit ut et dolor labore veniam
+                                        quis.</p>
+
+                                    <p>Sunt duis laboris ex et quis laborum laborum cillum mollit voluptate culpa
+                                        consequat ex cupidatat dolor eiusmod proident proident cillum pariatur sint
+                                        adipisicing in nostrud do dolore consectetur quis incididunt minim consectetur.
+                                        Exercitation elit proident dolor est id eiusmod dolor dolor incididunt ad
+                                        voluptate laboris cupidatat est est sint veniam sint officia sint incididunt est
+                                        sit ut tempor commodo pariatur ut proident et do.</p>
+
+                                    <p>Sed eu in ut sint dolor irure fugiat minim veniam sed ea proident ullamco
+                                        occaecat irure ut velit eu ullamco fugiat cupidatat dolore fugiat. Lorem ipsum
+                                        id non deserunt id consequat duis voluptate amet aliqua pariatur laboris officia
+                                        pariatur veniam velit reprehenderit sint nostrud cupidatat magna eiusmod mollit
+                                        exercitation pariatur nulla minim laboris dolore aliqua consectetur cillum duis
+                                        aute consectetur.</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="spacer-single"></div>
+
+                            <div id="blog-comment">
+                                <h4>Comments (5)</h4>
+
+                                <div class="spacer-half"></div>
+
+                                <ol>
+                                    <li>
+                                        <div class="avatar">
+                                            <img src="images/testimonial/1.jpg" alt="">
+                                        </div>
+                                        <div class="comment-info">
+                                            <span class="c_name">Merrill Rayos</span>
+                                            <span class="c_date id-color">2 days ago</span>
+                                            <span class="c_reply"><a href="#">Reply</a></span>
+                                            <div class="clearfix"></div>
+                                        </div>
+
+                                        <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                            explicabo.</div>
+                                        <ol>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="images/testimonial/2.jpg" alt="">
+                                                </div>
+                                                <div class="comment-info">
+                                                    <span class="c_name">Jackqueline Sprang</span>
+                                                    <span class="c_date id-color">2 days ago</span>
+                                                    <span class="c_reply"><a href="#">Reply</a></span>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                                    beatae vitae dicta sunt
+                                                    explicabo.</div>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li>
+                                        <div class="avatar">
+                                            <img src="images/testimonial/3.jpg" alt="">
+                                        </div>
+                                        <div class="comment-info">
+                                            <span class="c_name">Sanford Crowley</span>
+                                            <span class="c_date id-color">2 days ago</span>
+                                            <span class="c_reply"><a href="#">Reply</a></span>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                            explicabo.</div>
+                                        <ol>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="images/testimonial/4.jpg" alt="">
+                                                </div>
+                                                <div class="comment-info">
+                                                    <span class="c_name">Lyndon Pocekay</span>
+                                                    <span class="c_date id-color">2 days ago</span>
+                                                    <span class="c_reply"><a href="#">Reply</a></span>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                                    beatae vitae dicta sunt
+                                                    explicabo.</div>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li>
+                                        <div class="avatar">
+                                            <img src="images/testimonial/5.jpg" alt="">
+                                        </div>
+                                        <div class="comment-info">
+                                            <span class="c_name">Aleen Crigger</span>
+                                            <span class="c_date id-color">2 days ago</span>
+                                            <span class="c_reply"><a href="#">Reply</a></span>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                            explicabo.</div>
+                                    </li>
+                                </ol>
+
+                                <div class="spacer-single"></div>
+
+                                <div id="comment-form-wrapper">
+                                    <h4>Leave a Comment</h4>
+                                    <div class="comment_form_holder">
+                                        <form id="contact_form" name="form1" class="form-border" method="post"
+                                            action="#">
+
+                                            <label>Name</label>
+                                            <input type="text" name="name" id="name" class="form-control">
+
+                                            <label>Email <span class="req">*</span></label>
+                                            <input type="text" name="email" id="email" class="form-control">
+                                            <div id="error_email" class="error">Please check your email</div>
+
+                                            <label>Message <span class="req">*</span></label>
+                                            <textarea cols="10" rows="10" name="message" id="message"
+                                                class="form-control"></textarea>
+                                            <div id="error_message" class="error">Please check your message</div>
+                                            <div id="mail_success" class="success">Thank you. Your message has been
+                                                sent.</div>
+                                            <div id="mail_failed" class="error">Error, email not sent</div>
+
+                                            <p id="btnsubmit">
+                                                <input type="submit" id="send" value="Send" class="btn-main">
+                                            </p>
+
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="widget widget-post">
+                                <h4>Recent Posts</h4>
+                                <ul class="de-bloglist-type-1">
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/pic-blog-1.jpg" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#">
+                                                <h4>Harnessing Technology for Energy-Efficient AC</h4>
+                                            </a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/pic-blog-2.jpg" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#">
+                                                <h4>The Impact of Air Conditioning on Indoor Air Quality</h4>
+                                            </a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/pic-blog-3.jpg" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#">
+                                                <h4>Cybersecurity in the Digital Age</h4>
+                                            </a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/pic-blog-4.jpg" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#">
+                                                <h4>Balancing Progress and Responsibility</h4>
+                                            </a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="widget widget_tags">
+                                <h4>Popular Tags</h4>
+                                <ul>
+                                    <li><a href="#link">Art</a></li>
+                                    <li><a href="#link">Application</a></li>
+                                    <li><a href="#link">Design</a></li>
+                                    <li><a href="#link">Entertainment</a></li>
+                                    <li><a href="#link">Internet</a></li>
+                                    <li><a href="#link">Marketing</a></li>
+                                    <li><a href="#link">Multipurpose</a></li>
+                                    <li><a href="#link">Music</a></li>
+                                    <li><a href="#link">Print</a></li>
+                                    <li><a href="#link">Programming</a></li>
+                                    <li><a href="#link">Responsive</a></li>
+                                    <li><a href="#link">Website</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+        <!-- Section 1 -->
+        <section class="pt50 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Text first on mobile, same on desktop -->
+                    <div class="col-lg-5 order-1 order-lg-1">
+                        <h3 class="wow fadeInUp">Choose pieces that serve multiple purposes</h3>
+                        <p class="wow fadeInUp">
+                            When selecting Furniture for a small space, look for details with more than one purpose. For
+                            example, a sofa bed can be used as seating during the daytime and the same as a bed at
+                            nighttime Also, a coffee table with built-in storage can double as a place to store books,
+                            blankets, and other items.
+                        </p>
+                        <div class="spacer-10"></div>
+                        <!-- <a class="btn-main wow fadeInUp" href="about.html">About Company</a> -->
+                    </div>
+
+                    <!-- Image second on mobile, same on desktop -->
+                    <div class="col-lg-6 offset-lg-1 order-2 order-lg-2">
+                        <img style="border-radius:4%;" src="images/blog/blog2/blog2.png" class="img-fluid wow scaleIn"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="pt50 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Text first on mobile, second on desktop -->
+                    <div class="col-lg-5 offset-lg-1 order-1 order-lg-2">
+                        <h3 class="wow fadeInUp">Opt for Furniture with built-in storage</h3>
+                        <p class="wow fadeInUp">
+                            In a small space, storage is essential. Look for Furniture with built-in storage, such as
+                            ottomans that double as storage sp
+                            beds with drawers underneath, and shelving units that can hold books and decorative items.
+                        </p>
+                        <div class="spacer-10"></div>
+                    </div>
+
+                    <!-- Image second on mobile, first on desktop -->
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <img style="border-radius:4%;" src="images/blog/blog2/blog2-inner2.jpg"
+                            class="img-fluid wow scaleIn" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="pt50 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Text first on mobile, same on desktop -->
+                    <div class="col-lg-5 order-1 order-lg-1">
+                        <h3 class="wow fadeInUp">Consider Furniture that can be easily moved</h3>
+                        <p class="wow fadeInUp">
+                            You may need to move furniture around in a small space to create more room. Look for
+                            lightweight pieces that are easy to carry, such as a rolling cart that can be used as a side
+                            table or a bar cart.
+                        </p>
+                        <!-- <div class="spacer-10"></div> -->
+                    </div>
+
+                    <!-- Image second on mobile, same on desktop -->
+                    <div class="col-lg-6 offset-lg-1 order-2 order-lg-2">
+                        <img style="border-radius:4%;" src="images/blog/blog2/blog2-inner3.jpg"
+                            class="img-fluid wow scaleIn" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .new.section {
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                /* Optional: centers the whole block on the page */
+            }
+
+            .new.section h3 {
+
+                margin-top: 30px;
+            }
+
+            .new.section p {
+                margin-bottom: 20px;
+                color: #333;
+                /* Optional: for better readability */
+            }
+
+            .new.section p span.line1 {
+
+                display: block;
+
+            }
+
+            .new.section p span.line2 {
+
+                display: block;
+
+            }
+
+            .new.section p span.line3 {
+
+                display: block;
+
+                color: #555;
+            }
+        </style>
+
+        <div class="new section" style="text-align: left; margin-left: 405px;">
+            <h3>Consider Furniture that can be easily moved</h3>
+            <p style="width: 141%;">
+                <span> You may need to move furniture around in a small space to create more room. Look for lightweight
+                    pieces that are easy to carry, such as a rolling cart that can be used as a side table or a bar
+                    cart. Flexibility is key in compact living areas, so portable furniture can help you adapt your
+                    space as needed. Choosing multipurpose and movable items ensures your home stays functional and
+                    clutter-free.
+                </span>
+            </p>
+
+            <h3>Use Furniture to create distinct areas</h3>
+            <p style="width: 141%;">
+                <span> Divide your small space into different sizes using furniture. For example, use a bookshelf to
+                    separate your living and sleeping areas. A room divider can also create distinct spaces without
+                    taking up too much room. These visual boundaries help organize your space more efficiently and give
+                    each area a defined purpose. Even in a studio apartment, this technique can make your home feel more
+                    structured and spacious.
+
+                </span>
+            </p>
+
+            <h3>Look for Furniture that can be folded or stacked</h3>
+            <p style="width: 141%;">
+                <span> Furniture that can be folded or stacked is ideal for a small space. For example, a folding dining
+                    table can be put away when not in use, and stackable chairs can be stored in a corner when not
+                    needed. These space-saving solutions help you maintain an open and uncluttered layout. They also
+                    make it easier to accommodate guests or change the room setup when needed, without compromising on
+                    comfort or style.
+                </span>
+            </p>
+
+            <h3>Think outside the box</h3>
+            <p style="width: 141%;">
+                <span>Feel free to get creative with your furniture choices. For example, a trunk can serve as a coffee
+                    table and storage space, while a ladder can be used as a towel rack in the bathroom. Thinking
+                    outside the box allows you to maximize both style and functionality in small spaces. Unconventional
+                    pieces often become conversation starters and add a unique personality to your hom
+                </span>
+            </p>
+
+            <h3>Conclusion</h3>
+            <p style="width: 141%;">
+                <span> Living in a small space doesn't mean sacrificing comfort or style. Investing in
+                    multifunctional furniture lets you
+                    make the most of your room and create a functional and beautiful home. Keep these
+                    tips in mind when selecting
+                    Furniture for your small space, and you'll be well on your way to creating a
+                    comfortable and stylish home.
+                </span>
+            </p>
+        </div>
+
+        <!-- Add this CSS to your <style> block or CSS file -->
+        <style>
+            @media (max-width: 768px) {
+                .new.section {
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    padding: 15px;
+                    max-width: 100%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .new.section {
+                    margin-left: 15px !important;
+                    margin-right: 15px !important;
+                    padding: 15px;
+                    width: 100% !important;
+                    text-align: left;
+                }
+
+                .new.section p {
+                    width: 100% !important;
+                }
+
+                .new.section h3 {
+                    font-size: 18px !important;
+                    margin-top: 20px;
+                }
+
+                .new.section p span {
+                    font-size: 15px !important;
+                    line-height: 1.6;
+                }
+            }
+        </style>
+
+
+
+    </div>
+    <!-- content close -->
+    <!-- footer begin -->
+    <footer style="background-color: #000; color: #fff; padding: 40px 0;">
+        <div style="width: 100%; padding-inline: 20px;">
+            <div class="footer-container"
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; max-width: 1584px; margin: 0 auto;">
+
+                <!-- About Section -->
+                <div style="flex: 1 1 300px;">
+                    <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo" style="margin-bottom: 26px">
+
+                    <p style="line-height: 1.9;">
+
+                        Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
+                        production capabilities. From guest room case goods to custom solutions, we craft durable,
+                        high-quality furniture tailored to the needs of the hospitality industry—delivering across
+                        global markets with a commitment to excellence and reliability.
+                    </p>
+                </div>
+
+                <!-- Company Links -->
+                <div style="flex: 1 1 200px;">
+                    <div class="company-links" style="margin-left: 186px;">
+                        <h5 style="border-bottom: 2px solid#f5bb0e; display: inline-block; padding-bottom: 5px;">Company
+                        </h5>
+
+                        <ul class="footer-links"
+                            style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div style="flex: 1 1 250px;">
+                    <h5
+                        style="border-bottom: 2px solid #f5bb0e;; display: inline-block; padding-bottom: 5px; margin-bottom: 26px;">
+                        Contact us</h5>
+
+                    <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Sales
+                        Office</div>
+                    <div style="color: white;">2117 N Main St,Cleburne, TX 76033, United States</div>
+
+                    <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Factory
+                        Location</div>
+                    <div style="color: white;">Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, Kuha,
+                        Gujarat 382433</div>
+                    <br>
+
+                    <a href="mailto:info@endlos.furniture" target="_blank">
+                        <i class="icofont-envelope"></i> info@endlos.furniture
+                    </a>
+                    <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"><i
+                                class="icofont-phone"></i>+1(945)267-7548</a></div>
+                    <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"><i
+                                class="icofont-phone"></i>+919727792087</a></div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="bottom-section"
+                style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
+                <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
+                <div style="margin-top: 10px;">
+                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/19452677548" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                            class="icofont-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media (max-width: 768px) {
+                footer .footer-container {
+                    flex-direction: column !important;
+                    gap: 30px !important;
+                }
+
+                footer .company-links {
+                    margin-left: 0 !important;
+                }
+
+                footer .bottom-section {
+                    flex-direction: column !important;
+                    text-align: center;
+                    gap: 15px;
+                }
+
+                footer .bottom-section div {
+                    margin-top: 10px !important;
+                }
+            }
+        </style>
+    </footer>
+
+    <!-- footer close -->
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+
+</body>
+
+</html>

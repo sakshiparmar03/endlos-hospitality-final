@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Endlos-Hospitality</title>
+    <link rel="icon" href="images/hospitalityfavicon.ico" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="CoolAir — Air Conditioner & HVAC Repair Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919999999999" class="whatsapp-button" target="_blank" title="Chat on WhatsApp" style="margin: 13px;">
+  <div class="whatsapp-icon-container">
+    <div class="pulse-ring"></div>
+    <div class="whatsapp-icon">
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </div>
+  <span class="tooltip">Chat with us</span>
+</a>
+
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+/* WhatsApp Button Container */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Wrapper to center pulse ring and icon */
+.whatsapp-icon-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+/* Pulse Ring */
+.pulse-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #25D366;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: pulseRing 1.5s infinite;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+  background-color: #25D366;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0px 4px 10px rgba(0, 0, 0, 0.3),
+    0px -4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #25D366;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.whatsapp-button:hover .tooltip {
+  opacity: 1;
+  right: 80px;
+}
+
+/* Responsive: adjust for smaller screens */
+@media (max-width: 480px) {
+  .whatsapp-icon-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-icon {
+    font-size: 22px;
+  }
+
+  .tooltip {
+    font-size: 12px;
+    padding: 5px 10px;
+    right: 60px;
+  }
+
+  .whatsapp-button:hover .tooltip {
+    right: 70px;
+  }
+}
+</style>
+    <div id="wrapper">
+        <!-- <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div> -->
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+     <header class="transparent scroll-light has-topbar">
+            <div id="topbar">
+                <div id="topbarr" style="background: #000;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="https://wa.me/19452677548"><i
+                                                class="icofont-phone"></i>+1(945)267-7548</a></div>
+                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087"><i
+                                                class="icofont-phone"></i>+919727792087</a></div>
+                                    <div class="topbar-widget">
+                                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture"
+                                            target="_blank">
+                                            <i class="icofont-envelope"></i>info@endlos.furniture
+                                        </a>
+                                    </div>
+                                    <!-- <div class="topbar-widget"><a href="#"><i class="icofont-wall-clock"></i>Mon - Fri
+                                            08.00 - 18.00</a></div> -->
+                                </div>
+
+
+                       <div class="social-icons" style="margin-top: -9px;">
+                                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank">
+                                        <i class="fa-brands fa-facebook fa-lg"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                                        style="margin-top: -9px;"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                                    <a href="https://www.instagram.com/endlos.furniture?igsh=MXR2Z3FyOHNydHhoOA=="
+                                        target="_blank">
+                                        <i class="fa-brands fa-instagram fa-lg"></i>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <!-- <li><a class="menu-item" href="#">Home</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="index.html">Homepage One</a></li>
+                                            <li><a class="menu-item" href="homepage-2.html">Homepage Two</a></li>
+                                            <li><a class="menu-item" href="homepage-3.html">Homepage Three</a></li>
+                                            <li><a class="menu-item" href="homepage-4.html">Homepage Four</a></li>
+                                            <li><a class="menu-item" href="homepage-5.html">Homepage Five</a></li>
+                                            <li><a class="menu-item" href="homepage-6.html">Homepage Six</a></li>
+                                            <li><a class="menu-item" href="homepage-7.html">Homepage Seven</a></li>
+                                            <li><a class="menu-item" href="homepage-8.html">Homepage Eight</a></li>
+                                            <li><a class="menu-item" href="homepage-9.html">Homepage Nine</a></li>
+                                            <li><a class="menu-item new" href="homepage-10.html">Homepage Ten</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="#">Collections</a>
+                                        <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+                                    </li>
+
+                                    <!-- <li><a class="menu-item" href="collections.html">Collections</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+
+
+                                    <li><a class="menu-item" href="products.html" style="color:#000">Products</a>
+                                    <li><a class="menu-item" href="projects.html" style="color:#000">Projects</a></li>
+                                    <li><a class="menu-item" href="about.html" style="color:#000">About Us</a></li>
+
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="products.html">All Products</a></li>
+                                            <li><a class="menu-item" href="product-details-new.html">Product Details
+                                                    New</a></li>
+                                            <li><a class="menu-item" href="product-details.html">Product Details
+                                                    Simple</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
+                                    <li><a class="menu-item" href="contact.html" style="color:#000">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+                            <style>
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    /* Optional: to ensure text is readable */
+                                }
+
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                                    BACKGROUND: WHITE;
+                                    /* Normal shadow */
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                                    /* Deeper shadow on hover */
+                                }
+                            </style>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <!-- section begin -->
+            <section id="subheader">
+                <div class="container relative z-index-1000">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <!-- <div class="subtitle s2 bg-color text-light wow fadeInUp mb-2">Our Project</div> -->
+                            <h1>Americas Best Value Inn</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <section class="no-top">
+                <div class="container">
+
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <img src="images/projects/single 3/Queen1.png" class="img-fluid rounded-20px wow scaleOut"
+                                data-wow-delay=".0s" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="images/projects/single 3/Queen2.png" class="img-fluid rounded-20px wow scaleOut"
+                                data-wow-delay=".2s" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="row justify-content-center text-center g-4" style="margin-top: 60px;">
+                                
+                                <div class="col-lg-3 col-sm-6 px-3">
+                                    <div class="fw-bold text-dark">
+                                        <h4>Brand</h4>
+                                    </div>
+                                    Wyndham Hotels
+                                </div>
+                                <div class="col-lg-3 col-sm-6 px-3">
+                                    <div class="fw-bold text-dark">
+                                        <h4>Location</h4>
+                                    </div>
+                                    <!-- 3400 Dodge St, Dubuque, Iowa 52003 -->
+                                </div>
+                                <!-- Uncomment to add Year -->
+                                <!-- <div class="col-lg-3 col-sm-6 px-3">
+                                 <div class="fw-bold text-dark">Year</div>2023</div>-->
+                            </div>
+                        </div>
+
+
+                        <div class="spacer-single"></div>
+
+                        <div class="col-lg-3">
+                            <h3 style="margin-top: -73px;">Project Overview </h3>
+                        </div>
+
+                        <div class="col-lg-9">
+                            <p>Smart & Functional Furnishings for Americas Best Value Inn,
+                                Designed for comfort and practicality, our furniture for Americas Best Value Inn
+                                reflects the brand’s commitment to affordability without compromising quality. From
+                                durable headboards and wall guards to space-efficient nightstands, each piece is crafted
+                                to enhance guest stays while maintaining brand consistency. We can create the same for
+                                your property, tailoring designs to match your needs and specifications.
+                            </p>
+                        </div>
+
+                        <!-- <div class="spacer-single"></div>
+                    </div> -->
+
+                        <!-- <div class="row g-5">
+                        <div class="col-lg-6 wow fadeInLeft">
+                            <div class="padding40 bg-grey rounded-30 h-100">
+                                <h3 class="mb-4">Challenges</h3>
+                                <ol class="ol-style-1">
+                                    <li>Lorem ipsum irure ad minim laboris in nostrud consequat ad excepteur eu non est.
+                                    </li>
+                                    <li>Fugiat amet dolore elit irure in ad ad voluptate nostrud aute ullamco aliqua ut
+                                        minim elit.</li>
+                                    <li>Cupidatat magna mollit incididunt culpa cillum non eu sunt est est duis nisi
+                                        anim sunt ut sed.</li>
+                                    <li>Consectetur dolore esse dolore elit adipisicing culpa ea non deserunt enim ut
+                                        voluptate irure.</li>
+                                    <li>Culpa tempor amet anim laborum eu sunt esse aute nulla ut elit et.</li>
+                                </ol>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="col-lg-6 wow fadeInRight">
+
+                            <div class="padding40 bg-color text-light rounded-30 h-100">
+                                <h3 class="mb-4">Solutions</h3>
+                                <ol class="ol-style-1">
+                                    <li>Lorem ipsum irure ad minim laboris in nostrud consequat ad excepteur eu non est.
+                                    </li>
+                                    <li>Fugiat amet dolore elit irure in ad ad voluptate nostrud aute ullamco aliqua ut
+                                        minim elit.</li>
+                                    <li>Cupidatat magna mollit incididunt culpa cillum non eu sunt est est duis nisi
+                                        anim sunt ut sed.</li>
+                                    <li>Consectetur doloe esse dolore elit adipisicing culpa ea non deserunt enim ut
+                                        voluptate irure.</li>
+                                    <li>Culpa tempor amet anim laborum eu sunt esse aute nulla ut elit et.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                        <!-- </div> -->
+
+
+                        <section id="section-products">
+                            <h2>Products</h2>
+                            <div class="container">
+                                <div class="row g-4">
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="bg-light relative hover overflow-hidden rounded-1">
+                                            <div
+                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                <h4>20"Hanger</h4>
+                                                <p> 20"W x 1"D x 56"H </p>
+                                                 <a class="btn-main bg-color-2"  style="color: white;"  href="https://wa.me/19452677548">Inquire
+                                                    Now</a>
+                                            </div>
+                                            <div class="text-center py-3">
+                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color-2 text-light fw-bold px-3 rounded-20px">Best Seller</div> -->
+                                                <img src="images/bestvalin/value1.png" class="w-80" alt="">
+                                                <h4>20" Hanger</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="bg-light relative hover overflow-hidden rounded-1">
+                                            <div
+                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                <h4>20"Luggage Bench</h4>
+                                                <p>20"W x 20"D x 18"H </p>
+
+                                                 <a class="btn-main bg-color-2"  style="color: white;"  href="https://wa.me/19452677548">Inquire
+                                                    Now</a>
+                                            </div>
+                                            <div class="text-center py-3">
+                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                <img src="images/bestvalin/value2.png" class="w-80" alt="">
+                                                <h4>20"Luggage Bench</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="bg-light relative hover overflow-hidden rounded-1">
+                                            <div
+                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                <h4>20"Nightstand</h4>
+                                                <p> 20"W x 16"D x 26"H</p>
+
+                                                 <a class="btn-main bg-color-2"  style="color: white;"  href="https://wa.me/19452677548">Inquire
+                                                    Now</a>
+                                            </div>
+                                            <div class="text-center py-3">
+                                                <img src="images/bestvalin/value3.png" class="w-80" alt="">
+                                                <h4>20"Nightstand</h4>
+                                                <!-- <p> 20"W x 16"D x 26"H</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="bg-light relative hover overflow-hidden rounded-1">
+                                            <div
+                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                <h4>20"Wallguard</h4>
+                                                <p> 20"W x 3"D x 66"H</p>
+                                                 <a class="btn-main bg-color-2"  style="color: white;"  href="https://wa.me/19452677548">Inquire
+                                                    Now</a>
+                                            </div>
+                                            <div class="text-center py-3">
+                                                <img src="images/bestvalin/value4.png" class="w-80" alt="">
+                                                <h4>20"Wallguard</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="bg-light relative hover overflow-hidden rounded-1">
+                                            <div
+                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                <h4>24"Nightstand</h4>
+                                                <p>20"W x 16"D x 26"H</p>
+
+                                                 <a class="btn-main bg-color-2"  style="color: white;"  href="https://wa.me/19452677548">Inquire
+                                                    Now</a>
+                                            </div>
+                                            <div class="text-center py-3">
+                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color-2 text-light fw-bold px-3 rounded-20px">Best Seller</div> -->
+                                                <img src="images/bestvalin/value5.png" class="w-80" alt="">
+                                                <h4>24" Nightstand</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="bg-light relative hover overflow-hidden rounded-1">
+                                            <div
+                                                class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                <h4>24"Wallguard</h4>
+                                                <p>20"W x 3"D x 66"H</p>
+
+                                                 <a class="btn-main bg-color-2"  style="color: white;"  href="https://wa.me/19452677548">Inquire
+                                                    Now</a>
+                                            </div>
+                                            <div class="text-center py-3">
+                                                <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                <img src="images/bestvalin/value6.png" class="w-80" alt="">
+                                                <h4>24"Wallguard</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="row g-4">
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>30"Desk</h4>
+                                                        <p>30"W x 22"D x 30"H</p>
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color-2 text-light fw-bold px-3 rounded-20px">Best Seller</div> -->
+                                                        <img src="images/bestvalin/value7.png" class="w-80" alt="">
+                                                        <h4>30"Desk</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>36" Hanger</h4>
+                                                        <p>20"W x 1"D x 56"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div>///// -->
+                                                        <img src="images/bestvalin/value8.png" class="w-80" alt="">
+                                                        <h4>36"Hanger</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>36"Luggage Bench</h4>
+                                                        <p>20"W x 20"D x 18"H</p>
+
+                                                        <a class="btn-main bg-color-2"style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value9.png" class="w-80" alt="">
+                                                        <h4>36"Luggage Bench</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>48"Desk</h4>
+                                                        <p>30"W x 22"D x 30"H</p>
+
+                                                        <a class="btn-main bg-color-2"style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value10.png" class="w-80" alt="">
+                                                        <h4>48"Desk</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>AC Covering</h4>
+                                                        <p>75"W x 18"D x 24"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value11.png" class="w-80" alt="">
+                                                        <h4>AC Covering</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Closet</h4>
+                                                        <p>24"W x 14"D x 26"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value12.png" class="w-80" alt="">
+                                                        <h4>Closet</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Desk Chair</h4>
+                                                        <p>24"W x 20"D x 36"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value13.png" class="w-80" alt="">
+                                                        <h4>Desk Chair</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Desk mirco-fridge combo</h4>
+                                                        <p>48"W x 22"D x 38"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value14.png" class="w-80" alt="">
+                                                        <h4>Desk mirco-fridge combo</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Dining Chair</h4>
+                                                        <p>24"W x 18"D x 35"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value15.png" class="w-80" alt="">
+                                                        <h4>Dining Chair</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Dining Table</h4>
+                                                        <p>48"W x 22"D x 30"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value16.png" class="w-80" alt="">
+                                                        <h4>Dining Table</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Kitchen</h4>
+                                                        <p>48"W x 26"D x 34"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value17.png" class="w-80" alt="">
+                                                        <h4>Kitchen</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Media Panel</h4>
+                                                        <p>48"W x 3"D x 36"H</p>
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value18.png" class="w-80" alt="">
+                                                        <h4>Media Panel</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Micro-Fridge Combo</h4>
+                                                        <p>60"W x 26"D x 39"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value19.png" class="w-80" alt="">
+                                                        <h4>48"W x 22"D x 38"H</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Mirror</h4>
+                                                        <p>24"W x 1"D x 60"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value20.png" class="w-80" alt="">
+                                                        <h4>Mirror</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="bg-light relative hover overflow-hidden rounded-1">
+                                                    <div
+                                                        class="absolute w-100 h-100 padding30 bg-white hover-op-1 hover-mt-40 z-2">
+                                                        <h4>Queen Headboard</h4>
+                                                        <p>62"W x 3"D x 42"H</p>
+
+                                                        <a class="btn-main bg-color-2" style="color: white;"
+                                                            href="https://wa.me/19452677548">Inquire Now</a>
+                                                    </div>
+                                                    <div class="text-center py-3">
+                                                        <!-- <div class="abs end-0 m-4 my-2 d-inline bg-color text-light fw-bold px-3 rounded-20px">20% OFF</div> -->
+                                                        <img src="images/bestvalin/value21.png" class="w-80" alt="">
+                                                        <h4>Queen Headboard</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="spacer-double"></div>
+
+                                        </div>
+                                    </div>
+                        </section>
+
+
+
+
+            </section>
+
+        </div>
+        <!-- content close -->
+        <!-- footer begin -->
+    <footer style="background-color: #000; color: #fff; padding: 40px 0;">
+    <div style="width: 100%; padding-inline: 20px;">
+        <div class="footer-container"
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; max-width: 1584px; margin: 0 auto;">
+
+            <!-- About Section -->
+            <div style="flex: 1 1 300px;">
+                <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo" style="margin-bottom: 26px">
+
+                <p style="line-height: 1.9;">
+                    
+                         Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
+                        production capabilities. From guest room case goods to custom solutions, we craft durable,
+                        high-quality furniture tailored to the needs of the hospitality industry—delivering across
+                        global markets with a commitment to excellence and reliability.
+                </p>
+            </div>
+
+            <!-- Company Links -->
+            <div style="flex: 1 1 200px;">
+                <div class="company-links" style="margin-left: 186px;">
+                    <h5 style="border-bottom: 2px solid#f5bb0e; display: inline-block; padding-bottom: 5px;">Company</h5>
+
+                    <ul class="footer-links"
+                        style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div style="flex: 1 1 250px;">
+                <h5 style="border-bottom: 2px solid #f5bb0e;; display: inline-block; padding-bottom: 5px; margin-bottom: 26px;">
+                    Contact us</h5>
+
+                <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Sales Office</div>
+                <div style="color: white;">2117 N Main St,Cleburne, TX 76033, United States</div>
+
+                <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Factory Location</div>
+                <div style="color: white;">Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, Kuha, Gujarat 382433</div>
+                <br>
+
+                <a href="mailto:info@endlos.furniture" target="_blank">
+                    <i class="icofont-envelope"></i> info@endlos.furniture
+                </a>
+                <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"><i
+                            class="icofont-phone"></i>+1(945)267-7548</a></div>
+                <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"><i
+                            class="icofont-phone"></i>+919727792087</a></div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section"
+            style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
+            <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
+            <div style="margin-top: 10px;">
+                <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                    style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
+                    style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/19452677548" target="_blank"
+                    style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="icofont-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <style>
+    @media (max-width: 768px) {
+        footer .footer-container {
+            flex-direction: column !important;
+            gap: 30px !important;
+        }
+
+        footer .company-links {
+            margin-left: 0 !important;
+        }
+
+        footer .bottom-section {
+            flex-direction: column !important;
+            text-align: center;
+            gap: 15px;
+        }
+
+        footer .bottom-section div {
+            margin-top: 10px !important;
+        }
+    }
+</style>
+</footer>
+
+
+
+        <!-- footer close -->
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+
+</body>
+
+</html>

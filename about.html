@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Endlos-Hospitality</title>
+    <link rel="icon" href="images/hospitalityfavicon.ico" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="CoolAir — Air Conditioner & HVAC Repair Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-button" target="_blank" title="Chat on WhatsApp"
+        style="margin: 13px;">
+        <div class="whatsapp-icon-container">
+            <div class="pulse-ring"></div>
+            <div class="whatsapp-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <span class="tooltip">Chat with us</span>
+    </a>
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* WhatsApp Button Container */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Wrapper to center pulse ring and icon */
+        .whatsapp-icon-container {
+            position: relative;
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Pulse Ring */
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #25D366;
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: pulseRing 1.5s infinite;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        @keyframes pulseRing {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            70% {
+                transform: scale(1.8);
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* WhatsApp Icon */
+        .whatsapp-icon {
+            background-color: #25D366;
+            color: white;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow:
+                0px 4px 10px rgba(0, 0, 0, 0.3),
+                0px -4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-icon:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #25D366;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            z-index: 1;
+        }
+
+        .whatsapp-button:hover .tooltip {
+            opacity: 1;
+            right: 80px;
+        }
+
+        /* Responsive: adjust for smaller screens */
+        @media (max-width: 480px) {
+            .whatsapp-icon-container {
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-icon {
+                font-size: 22px;
+            }
+
+            .tooltip {
+                font-size: 12px;
+                padding: 5px 10px;
+                right: 60px;
+            }
+
+            .whatsapp-button:hover .tooltip {
+                right: 70px;
+            }
+        }
+    </style>
+
+    <div id="wrapper">
+        <!-- <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div> -->
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+
+        <!-- header begin -->
+        <header class="transparent scroll-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="https://wa.me/19452677548"><i
+                                                class="icofont-phone"></i>+1(945)267-7548</a></div>
+                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087"><i
+                                                class="icofont-phone"></i>+919727792087</a></div>
+                                    <div class="topbar-widget">
+                                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture"
+                                            target="_blank">
+                                            <i class="icofont-envelope"></i>info@endlos.furniture
+                                        </a>
+                                    </div>
+                                    <!-- <div class="topbar-widget"><a href="#"><i class="icofont-wall-clock"></i>Mon - Fri
+                                            08.00 - 18.00</a></div> -->
+                                </div>
+
+                                <div class="social-icons" style="margin-top: -9px;">
+                                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank">
+                                        <i class="fa-brands fa-facebook fa-lg"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                                        style="margin-top: -9px;"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                                    <a href="https://www.instagram.com/endlos.furniture?igsh=MXR2Z3FyOHNydHhoOA=="
+                                        target="_blank">
+                                        <i class="fa-brands fa-instagram fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-scroll" src="images/logo-black.webp" alt="" > -->
+                                        <img class="logo-scroll" src="images/main logo/logo.png" alt="">
+                                        <!-- <img class="logo-mobile" src="images/logo.webp" alt="" > -->
+                                        <img class="logo-mobile" src="images/main logo/logo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <!-- <li><a class="menu-item" href="#">Home</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="index.html">Homepage One</a></li>
+                                            <li><a class="menu-item" href="homepage-2.html">Homepage Two</a></li>
+                                            <li><a class="menu-item" href="homepage-3.html">Homepage Three</a></li>
+                                            <li><a class="menu-item" href="homepage-4.html">Homepage Four</a></li>
+                                            <li><a class="menu-item" href="homepage-5.html">Homepage Five</a></li>
+                                            <li><a class="menu-item" href="homepage-6.html">Homepage Six</a></li>
+                                            <li><a class="menu-item" href="homepage-7.html">Homepage Seven</a></li>
+                                            <li><a class="menu-item" href="homepage-8.html">Homepage Eight</a></li>
+                                            <li><a class="menu-item" href="homepage-9.html">Homepage Nine</a></li>
+                                            <li><a class="menu-item new" href="homepage-10.html">Homepage Ten</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="#">Collections</a>
+                                        <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+                                    </li>
+
+                                    <!-- <li><a class="menu-item" href="collections.html">Collections</a> -->
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="installation.html">Installation</a></li>
+                                            <li><a class="menu-item" href="repair.html">Repair</a></li>
+                                            <li><a class="menu-item" href="maintenance.html">Maintenance</a></li>
+                                            <li><a class="menu-item" href="pricing-plans.html">Pricing Plans</a></li>
+                                            <li><a class="menu-item" href="price-list.html">Price List</a></li>
+                                        </ul> -->
+
+
+                                    <li><a class="menu-item" href="products.html">Products</a>
+                                    <li><a class="menu-item" href="projects.html">Projects</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+
+                                    <!-- <ul>
+                                            <li><a class="menu-item" href="products.html">All Products</a></li>
+                                            <li><a class="menu-item" href="product-details-new.html">Product Details
+                                                    New</a></li>
+                                            <li><a class="menu-item" href="product-details.html">Product Details
+                                                    Simple</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a class="menu-item" href="blog.html">Blog</a></li> -->
+                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Calendly badge widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    document.getElementById("schedule-btn").addEventListener("click", function (e) {
+                                        e.preventDefault();
+                                        Calendly.initPopupWidget({ url: 'https://calendly.com/endlos-furniture/30min' });
+                                    });
+                                };
+                            </script>
+                            <!-- Calendly badge widget end -->
+                            <style>
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease;
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    /* Optional: to ensure text is readable */
+                                }
+
+                                #schedule-btn {
+                                    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                                    BACKGROUND: WHITE;
+                                    /* Normal shadow */
+                                }
+
+                                #schedule-btn:hover {
+                                    background-color: #fdcf21 !important;
+                                    color: black !important;
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                                    /* Deeper shadow on hover */
+                                }
+                            </style>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="#" id="schedule-btn" class="btn-main bg-color-2">Book a Meeting</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+
+      
+        <div id="content" class="no-top no-bottom">
+            <div id="top"></div>
+            <!-- section begin -->
+            <section id="subheader" class="jarallax text-light">
+                <img src="images/background/BACK1.png" class="jarallax-img" alt="">
+                <div class="container relative z-index-1000">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <!-- <div class="subtitle s2 bg-color text-light wow fadeInUp mb-2">Our Service</div> -->
+                            <h1 style="color:white">About Us</h1>
+                            <ul class="crumb">
+                                <!-- <li><a href="index.html">Home</a></li> -->
+                                <!-- <li class="active">About Us</li> -->
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 text-lg-end">
+                            <div class="fs-20 fw-600 no-bottom sm-hide">Experts in Comfort and Hospitality Service
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="de-overlay"></div>
+            </section>
+            <!-- section close -->
+
+            <div class="bg-color relative z-index-1000 mt-40 mb40">
+                <div class="border-white-6 text-center bg-color text-white w-84px h-80px p-3 circle absolute abs-center sm-hide"
+                    style="color: #000;">
+                    <i class="icofont-users-alt-3 fs-36"></i>
+                </div>
+            </div>
+
+            <section>
+                <div class="container" style="margin-top: 60px;">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <!-- <div class="subtitle wow fadeInUp mb-3">Welcome</div> -->
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s"
+                                style="text-align: center; color: rgb(0, 0, 0); margin-left: -72px;">History of Our
+                                Company</h2>
+
+                            <p style="padding: 0 20px; text-align: justify;">Established in 2016, ENDLOS is a
+                                diversified conglomerate headquartered in Ahmedabad,
+                                India, with an expansion in the United States through our sales office in Dallas, Texas.
+                                What started as a vision to create innovative, forward-thinking businesses has evolved
+                                into a dynamic group of companies:Endlos Innovations, Endlos Technologies,
+                                and Endlos
+                                Hospitality. Each one is driven by a shared commitment to excellence and a focus on
+                                delivering exceptional value in its respective domain. </p>
+                            <p style="padding: 0 20px; text-align: justify;">
+                                At Endlos Hospitality, we apply our innovation-led approach to the hospitality furniture
+                                industry. Backed by a fully integrated manufacturing facility in India and deep
+                                expertise in hospitality design, we work closely with hotel owners across the United
+                                States to deliver high-quality, custom-made case goods. Every piece we create reflects
+                                our core belief in “The Endless Possibilities”. We believe in turning your customized
+                                ideas into outstanding results, from initial concept to final installation.</p>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="row g-4">
+                                <div class="col-6">
+                                    <img src="images/misc/web9.webp" class="img-fluid rounded-10 mb-4 wow zoomIn"
+                                        alt="">
+                                    <div class="col-12 text-center">
+                                        <div class="bg-color-2 text-light px-4 pt30 pb10 rounded-10"
+                                            style="background: white;  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); ">
+                                            <div class="de_count wow fadeInUp">
+                                                <h3><span class="timer" style="color: black;" data-to="100"
+                                                        data-speed="3000"></span>+</h3>
+                                                <h4>Projects Completed</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="spacer-double sm-hide"></div>
+                                    <div class="col-12 text-center">
+                                        <div class="bg-color text-light px-4 pt30 pb10 rounded-10"
+                                            style="  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+                                            <div class="spacer-double sm-hide"></div>
+                                            <div class="de_count wow fadeInUp">
+                                                <h3><span class="timer" style="color: #000;" data-to="10"
+                                                        data-speed="3000"></span>+</h3>
+                                                <h4>Experience</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="images/misc/web8.webp" class="img-fluid rounded-10 mt-4 wow zoomIn"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="no-top">
+                <div class="container" style="margin-top: 60px;">
+                    <div class="row">
+                        <!-- <div class="col-lg-12"
+                            style=" box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; margin-top: 39px; margin-bottom: 74px; border-radius: 23px;"> -->
+                        <div class="p-5 bg-color text-white rounded-20px" style="background-color: black;">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-3 text-center">
+                                    <!-- <div class="bg-color-2 text-light subtitle wow fadeInUp mb-3">Behind the Scene</div> -->
+                                    <h2 class="wow fadeInUp" data-wow-delay=".2s" style="color: rgb(255, 255, 255);">Our
+                                        Leadership
+                                    </h2>
+                                    <p class="lead" style="color: #ffffff;">Our leadership team brings years of
+                                        hands-on experience in the
+                                        hospitality industry — combining technical knowledge, creative insight, and
+                                        a commitment to delivering excellence in every project we undertake.</p>
+                                    <div class="spacer-single"></div>
+                                </div>
+                            </div>
+
+                            <!-- Centered Team Members -->
+                            <div class="row justify-content-center g-4">
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <img src="images/team/khilanpatel3.png" class="img-fluid rounded-10px"
+                                        alt="Khilan Patel">
+                                    <div class="p-3 text-center">
+                                        <h4 class="mb-0" style="color: rgb(255, 255, 255);">Khilan Patel</h4>
+                                        <p class="mb-2" style=" color: #ffffff;">Founder &amp; CEO</p>
+                                        <div class="social-icons">
+                                            <!-- <a href="https://www.facebook.com/share/18yzjuK4eE/"><i
+                                                        class="bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i></a> -->
+                                            <a href="https://www.linkedin.com/in/khilanmpatel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                                class="linkedin-square" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            </a>
+
+                                            <!-- <a
+                                                    href="https://www.instagram.com/patel_khilan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                                        class="bg-hover-2 text-hover-white fa-brands fa-instagram"></i></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                    <img src="images/team/Yashpatel2.png" class="img-fluid rounded-10px"
+                                        alt="Yash Patel">
+                                    <div class="p-3 text-center">
+                                        <h4 class="mb-0" style="color: rgb(255, 255, 255);">Yash Patel</h4>
+                                        <p class="mb-2" style="color: #ffffff; ">Founder &amp; CEO</p>
+                                        <div class="social-icons">
+                                            <!-- <a href="#"><i
+                                                        class="bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i></a> -->
+                                            <a href="https://www.linkedin.com/in/endlos-yash?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                                class="linkedin-square" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            </a>
+
+                                            <!-- <a
+                                                    href="https://www.instagram.com/yash_npatel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                                        class="bg-hover-2 text-hover-white fa-brands fa-instagram"></i></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Centered Team Members -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="no-top">
+                <div class="container">
+                    <div class="row g-4 align-items-center" style="margin-top: 7px;">
+                        <div class="col-lg-6">
+
+                            <div class="mb-2 text-center">
+                                <div class="bg-color-3 inline-block w-25 p-3 py-4 rounded-10px m-2 wow fadeInUp"
+                                    data-wow-delay=".0s">
+                                    <img src="images/workingWithBrands/Americas.webp" class="img-fluid">
+                                </div>
+
+                                <div class="mb-2 sm-hide"></div>
+
+                                <div class="bg-color-3 inline-block w-25 p-3 py-4 rounded-10px m-2 wow fadeInUp"
+                                    data-wow-delay=".4s">
+                                    <img src="images/workingWithBrands/DaysInnlogo.svg.webp" class="img-fluid">
+                                </div>
+                                <div class="bg-color-3 inline-block w-25 p-3 py-4 rounded-10px m-2 wow fadeInUp"
+                                    data-wow-delay=".6s">
+                                    <img src="images/workingWithBrands/Super8.webp" class="img-fluid">
+                                </div>
+                                <div class="bg-color-3 inline-block w-25 p-3 py-4 rounded-10px m-2 wow fadeInUp"
+                                    data-wow-delay=".8s">
+                                    <img src="images/workingWithBrands/microtel.webp" class="img-fluid">
+                                </div>
+
+
+                                <div class="mb-2 sm-hide"></div>
+
+                                <div class="bg-color-3 inline-block w-25 p-3 py-4 rounded-10px m-2 wow fadeInUp"
+                                    data-wow-delay="1s">
+                                    <img src="images/workingWithBrands/ramada.webp" class="img-fluid">
+                                </div>
+                                <div class="bg-color-3 inline-block w-25 p-3 py-4 rounded-10px m-2 wow fadeInUp"
+                                    data-wow-delay="1.2s">
+                                    <img src="images/workingWithBrands/candlewood.webp" class="img-fluid">
+                                </div>
+                                <div class="bg-color-3 inline-block w-25 p-3 py-4 rounded-10px m-2 wow fadeInUp"
+                                    data-wow-delay=".2s">
+                                    <img src="images/workingWithBrands/whyndhamgarden.webp" class="img-fluid">
+                                </div>
+
+                                <div class="bg-color-3 inline-block w-25 p-3 py-4 rounded-10px m-2 wow fadeInUp"
+                                    data-wow-delay=".0s">
+                                    <img src="images/workingWithBrands/Comfort.webp" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <!-- <div class="subtitle wow fadeInUp mb-3">Services Process</div> -->
+                            <h2>Diverse Portfolio of Brands Served</h2>
+                            <div class="spacer-10"></div>
+                            <p>We are proud to collaborate with leading global brands, providing
+                                outstanding furniture solutions that uphold the highest standards in hospitality.</p>
+                            <!-- <a class="btn-main" href="#">Discover Plugins</a> -->
+                        </div>
+                    </div>
+
+                    <div class="container my-5">
+                        <div class="row gx-4 gy-4 align-items-center" style="margin-top: 9%;">
+                            <!-- Map Section -->
+                            <div class="col-12 col-md-6">
+                                <div style="border-radius: 10px; overflow: hidden;">
+                                    <!-- <iframe
+                                        src="https://www.google.com/maps/d/u/0/embed?mid=1mZ2fmU_nrQIbefDo0fWfH2eIuCRUEm4&ehbc=2E312F"
+                                        width="100%" height="350" style="border: 0; display: block;"></iframe> -->
+                                    <img src="images/misc/eh website map.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- Text Section -->
+                            <div class="col-12 col-md-6">
+                                <div class="p-3">
+                                    <h2 class="mb-3">Our Footprint Across the USA</h2>
+                                    <p class="mb-0" style="word-break: break-word;">
+                                        Each point on the map marks a hotel project we’ve successfully delivered across
+                                        the
+                                        United States.
+                                        From coast to coast, Endlos Hospitality has partnered with both independent
+                                        properties
+                                        and leading hotel brands to craft furniture that enhances guest experiences.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="stats-section" style="margin-top: 76px; width:105%">
+                        <h2>Proven Capacity, Consistent Results</span></h2>
+                        <p> We bring years of expertise to scalable furniture manufacturing, delivering quality,
+                            variety, and consistency across various furniture categories.</p>
+
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <div class="stat-number" data-target="80000" data-plus="true">0</div>
+                                <div class="stat-label">SQ. FT. Workshop</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number" data-target="9000" data-plus="true">0</div>
+                                <div class="stat-label">Yearly room capacity</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number" data-target="75" data-plus="true">0</div>
+                                <div class="stat-label">Team members</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number" data-target="3" data-plus="true">0</div>
+                                <div class="stat-label">Production facilities</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number" data-target="10" data-plus="true">0</div>
+                                <div class="stat-label">Years of expertise</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number" data-target="100" data-plus="true">0</div>
+                                <div class="stat-label">Projects completed</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- <section class="no-top">
+                <div class="container">
+                    <div class="col-lg-12">
+                        <div class="p-5 rounded-20px bg-color-2 text-light">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-3 text-center">
+                                    <div class="subtitle bg-color text-white wow fadeInUp mb-3">Top 6 Reasons</div>
+                                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Why Choose Us</h2>
+                                    <p class="lead wow fadeInUp">We offer a unique combination of local presence, direct
+                                        service, expert design assistance, comprehensive project management, in-house
+                                        manufacturing, and dedicated support, ensuring a smooth, personalized experience
+                                        for every client.</p>
+                                    <div class="spacer-single"></div>
+                                </div>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".0s">
+                                    <div>
+                                        <i
+                                            class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                        <div class="pl-80">
+                                            <h4>Local Presence(USA)</h4>
+                                            <p class="mb-0">With our presence in the USA, we offer faster communication,
+                                                quicker support, and better project coordination.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                    <div>
+                                        <i
+                                            class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                        <div class="pl-80">
+                                            <h4>Direct B2C offerings</h4>
+                                            <p class="mb-0">We work directly with hotels and businesses, ensuring better
+                                                pricing, transparency, and personalized service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                    <div>
+                                        <i
+                                            class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                        <div class="pl-80">
+                                            <h4> Free design services</h4>
+                                            <p class="mb-0">Our expert team provides complimentary design assistance,
+                                                helping you visualize and perfect your project at no extra cost.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                    <div>
+                                        <i
+                                            class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                        <div class="pl-80">
+                                            <h4>End-to-End Project Management</h4>
+                                            <p class="mb-0">From layout planning to final installation, we handle every
+                                                step of your project for a seamless experience.
+                                                .</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                    <div>
+                                        <i
+                                            class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                        <div class="pl-80">
+                                            <h4>In-house manufacturing</h4>
+                                            <p class="mb-0">All products are manufactured in our own facility, giving us
+                                                complete control over quality, timelines, and customization.
+                                                .</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                                    <div>
+                                        <i
+                                            class="bg-color text-light fs-48 p-2 absolute id-color icon_check rounded-10px"></i>
+                                        <div class="pl-80">
+                                            <h4> Personalized client support</h4>
+                                            <p class="mb-0">We offer dedicated, one-on-one support to ensure your unique
+                                                needs are understood and delivered with care.
+                                                .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+</div>
+<!-- content close -->
+<!-- footer begin -->
+<footer style="background-color: #000; color: #fff; padding: 40px 0;">
+    <div style="width: 100%; padding-inline: 20px;">
+        <div class="footer-container"
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; max-width: 1584px; margin: 0 auto;">
+
+            <!-- About Section -->
+            <div style="flex: 1 1 300px;">
+                <img src="images/main logo/logo.png" alt="Endlos Hospitality Logo" style="margin-bottom: 26px">
+
+                <p style="line-height: 1.9;">
+
+                    Endlos Hospitality is a hotel furniture manufacturer with in-house design, engineering, and
+                    production capabilities. From guest room case goods to custom solutions, we craft durable,
+                    high-quality furniture tailored to the needs of the hospitality industry—delivering across
+                    global markets with a commitment to excellence and reliability.
+                </p>
+            </div>
+
+            <!-- Company Links -->
+            <div style="flex: 1 1 200px;">
+                <div class="company-links" style="margin-left: 186px;">
+                    <h5 style="border-bottom: 2px solid#f5bb0e; display: inline-block; padding-bottom: 5px;">Company
+                    </h5>
+
+                    <ul class="footer-links" style="list-style: none; padding: 0; margin-top: 15px; line-height: 2;">
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div style="flex: 1 1 250px;">
+                <h5
+                    style="border-bottom: 2px solid #f5bb0e;; display: inline-block; padding-bottom: 5px; margin-bottom: 26px;">
+                    Contact us</h5>
+
+                <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Sales Office
+                </div>
+                <div style="color: white;">2117 N Main St,Cleburne, TX 76033, United States</div>
+
+                <div class="fw-bold text-white" style="color: white;"><i class="icofont-location-pin"></i> Factory
+                    Location</div>
+                <div style="color: white;">Star Gold industrial Park, Plot No -80, Indore - Ahmedabad Hwy, Kuha, Gujarat
+                    382433</div>
+                <br>
+
+                <a href="mailto:info@endlos.furniture" target="_blank">
+                    <i class="icofont-envelope"></i> info@endlos.furniture
+                </a>
+                <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"><i
+                            class="icofont-phone"></i>+1(945)267-7548</a></div>
+                <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"><i
+                            class="icofont-phone"></i>+919727792087</a></div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section"
+            style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
+            <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
+            <div style="margin-top: 10px;">
+                <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                    style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
+                    style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/19452677548" target="_blank"
+                    style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                    style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                        class="icofont-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <style>
+        @media (max-width: 768px) {
+            footer .footer-container {
+                flex-direction: column !important;
+                gap: 30px !important;
+            }
+
+            footer .company-links {
+                margin-left: 0 !important;
+            }
+
+            footer .bottom-section {
+                flex-direction: column !important;
+                text-align: center;
+                gap: 15px;
+            }
+
+            footer .bottom-section div {
+                margin-top: 10px !important;
+            }
+        }
+    </style>
+</footer>
+
+
+
+<!-- footer close -->
+</div>
+
+<!-- Javascript Files
+    ================================================== -->
+<script src="js/plugins.js"></script>
+<script src="js/designesia.js"></script>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+<script src="form.js"></script>
+<script src="recaptcha.js"></script>
+
+</body>
+
+</html>
