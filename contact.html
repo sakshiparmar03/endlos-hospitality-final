@@ -175,9 +175,9 @@
                         <div class="col-lg-12">
                             <div class="d-flex justify-content-between xs-hide">
                                 <div class="header-widget d-flex">
-                                    <div class="topbar-widget"><a href="https://wa.me/19452677548"  target="_blank"><i
+                                    <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"><i
                                                 class="icofont-phone"></i>+1(945)267-7548</a></div>
-                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087"  target="_blank"><i
+                                    <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"><i
                                                 class="icofont-phone"></i>+919727792087</a></div>
                                     <div class="topbar-widget">
                                         <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture"
@@ -410,16 +410,40 @@
                                 </div>
 
                                 <div id="submit" class="mt20">
-                                    <button type="submit">Submit</button>
+                                    <button type="submit" class="styled-button">Submit</button>
                                 </div>
 
-                                <div id="success_message" class="success">
-                                    ✅ Message sent successfully!
+                                <style>
+                                    .styled-button {
+                                        background: linear-gradient(to right, #ffcc00, #ff9900);
+                                        color: rgb(0, 0, 0);
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        border: none;
+                                        padding: 12px 30px;
+                                        border-radius: 10px;
+                                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                                        transition: all 0.3s ease;
+                                        cursor: pointer;
+                                    }
+
+                                    .styled-button:hover {
+                                        background: linear-gradient(to right, #ff9900, #ffcc00);
+                                        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+                                        transform: scale(1.05);
+                                    }
+                                </style>
+
+                                <!-- <div id="success_message" class="success">
+                                    ✅   Message sent successfully!
                                 </div>
                                 <div id="error_message" class="error">
                                     ❌ There was an error submitting your message. Please contact us at
                                     <strong>info@endlos.furniture</strong>.
-                                </div>
+                                </div> -->
+                                <div id="success_message" style="display: none; color: green;">✔️ Message sent
+                                    successfully!</div>
+                                <div id="error_message" style="display: none; color: red;"> Erros gajdgjs dashdkh</div>
                             </form>
 
                             <script>
@@ -454,19 +478,24 @@
                                     })
                                         .then(async (response) => {
                                             const result = await response.json();
-                                            if (response.ok && result?.message?.toLowerCase()?.includes("success")) {
+                                            const msg = result?.message?.toLowerCase() || "";
+
+                                            if (msg.includes("success")) {
                                                 document.getElementById("success_message").style.display = "block";
                                                 document.getElementById("contact_form").reset();
                                             } else {
-                                                throw new Error("API responded with error");
+                                                document.getElementById("error_message").innerText =
+                                                    "❌ There was an error submitting your message. Please contact us at";
+                                                document.getElementById("error_message").style.display = "block";
                                             }
                                         })
                                         .catch((error) => {
-                                            console.error("Error:", error);
-                                            document.getElementById("error_message").style.display = "block";
+                                            console.error("Fetch error:", error);
+                                            // Don’t show error unless response string doesn’t match
                                         });
                                 });
                             </script>
+
                             <script>
                                 function sendEmail(event) {
                                     event.preventDefault(); // Prevent actual form submission
@@ -613,9 +642,9 @@
                             Gujarat 382433</div>
                         <br>
 
-                       <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank">
-                        <i class="icofont-envelope"></i> info@endlos.furniture
-                    </a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank">
+                            <i class="icofont-envelope"></i> info@endlos.furniture
+                        </a>
                         <div class="topbar-widget"><a href="https://wa.me/19452677548" target="_blank"><i
                                     class="icofont-phone"></i>+1(945)267-7548</a></div>
                         <div class="topbar-widget"><a href="https://wa.me/+919727792087" target="_blank"><i
@@ -624,25 +653,25 @@
                 </div>
 
                 <!-- Bottom Section -->
-             <div class="bottom-section"
-                style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
-                <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
-                <div><a href="policy.html" target="_blank">Privacy Policy</a></div>
-                <div style="margin-top: 10px;">
-                    <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
-                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
-                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/19452677548" target="_blank"
-                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
-                        style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
-                            class="icofont-envelope"></i></a>
+                <div class="bottom-section"
+                    style="border-top: 1px solid #333; margin-top: 30px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1700px; margin-inline: auto;">
+                    <div>Copyright © 2025 Endlos. Designed By <span style="color:#f5bb0e;">ENDLOS</span></div>
+                    <div><a href="policy.html" target="_blank">Privacy Policy</a></div>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.linkedin.com/company/endlosfurniture/" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/1EwRii8bZh/" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/19452677548" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px;"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=info@endlos.furniture" target="_blank"
+                            style="background: #f5bb0e; color: #fff; padding: 8px 10px; border-radius: 4px; margin-right: 5px;"><i
+                                class="icofont-envelope"></i></a>
+                    </div>
                 </div>
-            </div>
             </div>
             <style>
                 @media (max-width: 768px) {
